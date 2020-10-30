@@ -1,6 +1,7 @@
 # Dumbarton
+[![Netlify Status](https://api.netlify.com/api/v1/badges/24a6b9c4-6586-4e8d-8540-92942a0c47e8/deploy-status)](https://app.netlify.com/sites/admiring-bassi-e955ad/deploys)
 ![](https://img.shields.io/badge/Bootstrap-v4.5.3-blue)  
-A Jekyll theme designed for academics, powered by Bootstrap 4.
+A Jekyll theme designed for academics, powered by Bootstrap 4. [Demo](https://dumbarton.netlify.app/) page hosted on Netlify.
 
 - [Dumbarton](#dumbarton)
   - [Installation](#installation)

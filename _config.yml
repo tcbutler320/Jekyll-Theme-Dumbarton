@@ -37,7 +37,8 @@ sass:
   
     query: "@*"
   
-
+home_sections:
+  
 
 font_awesome_id: 32a2b2a489
 # =============================

@@ -17,29 +17,46 @@ layout: default
   </div>
 </div>
 
-<div class="card text-center mx-auto" style="max-width: 95%;">
+<div class="card mx-auto" style="max-width: 95%;">
   <div class="card-header">
-    <ul class="nav nav-tabs card-header-tabs">
-      <li class="nav-item">
-        <a class="nav-link active" href="#">Publications</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-      </li>
+    <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
+      {% for section in site.data.sections %}
+        {% if section.first %}
+          <li class="nav-item">
+            <a class="nav-link active" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}}" aria-selected="true">{{section.name}}</a>
+          </li>
+        {% else %}
+          <li class="nav-item">
+            <a class="nav-link"  href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="false">{{section.name}}</a>
+          </li>
+        {% endif %}
+      {% endfor %}
     </ul>
   </div>
-  <div class="card-body">
-    <h5 class="card-title">A list of my publications</h5>
-    <p class="card-text">
-        <div class="publications">
-            {% bibliography -f papers %}
-        </div>
-    </p>
+  <div class="card-body">          
+      <div class="tab-content mt-3">
+        {% for section in site.data.sections %}
+          {% if section.first %}
+            {% if section.name == "Publications" %}
+              <div class="tab-pane active" id="{{section.id}}" role="tabpanel">
+                <h5 class="card-title text-center">{{section.description}}</h5>
+                <p class="card-text">{% bibliography -f papers %}</p>
+              </div>
+            {% else %}
+              <div class="tab-pane" id="{{section.id}}" role="tabpanel">
+                <p class="card-text">{{section.description}}</p>
+              </div>
+            {% endif %}
+          {% else %}
+            <div class="tab-pane" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
+              <p class="card-text">{{section.description}}</p>
+            </div>
+          {% endif %}
+        {% endfor %}
+      </div>
   </div>
 </div>
+
 
 <div class="dumbarton-spacer">
 </div>
@@ -52,3 +69,10 @@ layout: default
   </div>
 </div>
 -->
+
+<script>
+    $('#test-list a').on('click', function (e) {
+    e.preventDefault()
+    $(this).tab('show')
+    })
+</script>
