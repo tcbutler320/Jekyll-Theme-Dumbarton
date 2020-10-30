@@ -5,12 +5,14 @@ A Jekyll theme designed for academics, powered by Bootstrap 4. [Demo](https://du
 
 - [Dumbarton](#dumbarton)
   - [Installation](#installation)
+  - [Development Roadmap](#development-roadmap)
   - [Style](#style)
   - [Academic Options](#academic-options)
     - [Jekyll Scholar](#jekyll-scholar)
   - [Theme Options](#theme-options)
     - [Favicon](#favicon)
     - [Meta Data](#meta-data)
+    - [Media](#media)
 
 
 ## Installation   
@@ -41,6 +43,14 @@ bundle install
 bundle exec jekyll serve
 ```
 
+## Development Roadmap 
+
+
++ [x] Jekyll Scholar publication formatting
++ [ ] Include more [Awesome Jekyll Plug ins](https://github.com/planetjekyll/awesome-jekyll-plugins)
++ [ ] Create custom CSS for jekyll-scholar formatting
++ [ ] Add [Jekyll-Admin](https://github.com/jekyll/jekyll-admin) for CMS 
+
 ## Style 
 
 **Bootstrap CDN**
@@ -65,3 +75,8 @@ Site favicons are located at `/assets/img/icons`. You can use a [Favicon Generat
 ### Meta Data 
 
 For more information about editing the metadata used in `header.html` can be found on [htmlhead.dev](https://htmlhead.dev/)
+
+
+### Media
+
+Sample images used in the Dumbarton Demo site were found on [unsplash](https://unsplash.com/)

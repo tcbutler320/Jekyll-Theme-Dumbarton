@@ -64,6 +64,7 @@ a:link{
 .dumbarton-home{
     width:50%;
     max-width:300px;
+    max-height:150px;
     padding-right: 10px;
     padding-top: 10px;
 }

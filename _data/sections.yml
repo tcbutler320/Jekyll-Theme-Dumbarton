@@ -5,10 +5,16 @@
 
 - name: Presentations
   id: presentations
-  description: Description 2
+  description: My Recent Presentations
   first: false
 
-- name: BugBounties
+- name: Bug Bounties
   id: bugbounties
-  description: Description 3
+  description: My Recent Bug Bounties and Vulnerabilities
+  first: false
+
+- name: Open Source Software
+  id: software
+  description: My Open Source Project
+  content: adsf
   first: false
