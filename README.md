@@ -1,5 +1,13 @@
 # Dumbarton
-A Jekyll theme designed for academics.
+A Jekyll theme designed for academics, powered by Bootstrap 4.
+
+- [Dumbarton](#dumbarton)
+  - [Installation](#installation)
+  - [Style](#style)
+  - [Theme Options](#theme-options)
+    - [Favicon](#favicon)
+    - [Meta Data](#meta-data)
+
 
 ## Installation   
 
@@ -29,7 +37,11 @@ bundle install
 bundle exec jekyll serve
 ```
 
+## Style 
 
+**Bootstrap CDN**
+
+**Fontawesome** 
 
 
 

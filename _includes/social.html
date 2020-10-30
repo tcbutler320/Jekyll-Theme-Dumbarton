@@ -1,7 +1,9 @@
 <!-- Displays Social Media Icons based on _config.yml settings -->
 
 {{ if site.twitter }}
-<a class="social-link" href="{{ site.twitter_url }}"><i class="fab fa-twitter-square fa-lg"></i></a>
+<a class="social-link" href="https://twitter.com/{{ site.twitter }}"><i class="fab fa-twitter-square fa-lg"></i></a>
 {{ elseif site.github }}
-<a href="{{ site.github_url }}"><i class="fab fa-github-square fa-lg"></i></a>
+<a href="https://github.com/{{ site.github }}"><i class="fab fa-github-square fa-lg"></i></a>
+{{ elseif site.linkedin }}
+<a href="https://www.linkedin.com/in/{{ site.linkedin }}"><i class="fab fa-linkedin fa-lg"></i></a>
 {{ endif }}
