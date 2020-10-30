@@ -1,0 +1,22 @@
+{
+  "name": "dumbarton",
+  "version": "1.0.0",
+  "description": "A Jekyll theme for academics",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tcbutler320/Dumbarton.git"
+  },
+  "keywords": [
+    "jekyll"
+  ],
+  "author": "Tyler Butler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tcbutler320/Dumbarton/issues"
+  },
+  "homepage": "https://github.com/tcbutler320/Dumbarton#readme"
+}

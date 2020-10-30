@@ -16,6 +16,8 @@ plugins:
 sass:
   sass_dir: _sass
 
+
+font_awesome_id: 32a2b2a489
 # =============================
 # META TAG SETTINGS            
 #==============================
@@ -44,6 +46,7 @@ profile_image: https://res.cloudinary.com/tbutler-org/image/upload/v1603335469/I
 occupation: Developer
 snippet: I am a Developer
 twitter: 
+twitter_url: https://twitter.com/tbutler0x90
 github: 
 linkedin: 
 website: 

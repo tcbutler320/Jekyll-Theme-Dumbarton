@@ -26,3 +26,38 @@ html {
     max-width: 680px;
     padding: 0 15px;
   }
+
+.social-link {
+    a:link{
+        color:black;
+      }
+      a:visited{
+        color:purple;
+      }
+      a:hover{
+        color:orange;
+      }
+      a:focus{
+        color:green;
+      }
+      a:active{
+        color:red;
+      }
+}
+
+
+a:link{
+    color:black;
+  }
+  a:visited{
+    color:black;
+  }
+  a:hover{
+    color:black;
+  }
+  a:focus{
+    color:black;
+  }
+  a:active{
+    color:black;
+  }

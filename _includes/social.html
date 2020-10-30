@@ -1,0 +1,7 @@
+<!-- Displays Social Media Icons based on _config.yml settings -->
+
+{{ if site.twitter }}
+<a class="social-link" href="{{ site.twitter_url }}"><i class="fab fa-twitter-square fa-lg"></i></a>
+{{ elseif site.github }}
+<a href="{{ site.github_url }}"><i class="fab fa-github-square fa-lg"></i></a>
+{{ endif }}
