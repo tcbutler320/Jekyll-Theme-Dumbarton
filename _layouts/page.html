@@ -2,4 +2,19 @@
 layout: default
 ---
 
-{{ content }}
+{% if page.header-img %}
+<div class="card mb-3">
+  <img class="card-img-top rounded-lg" src="{{ page.header-img }}" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">{{ page.title }}</h5>
+      <p class="card-text">
+          {{ content }}
+      </p>
+      {% if page.last-updated %}
+        <p class="card-text"><small class="text-muted">Last updated {{ page.last-updated }}</small></p>
+      {% endif %}
+  </div>
+</div>
+{% endif %}
+
+
