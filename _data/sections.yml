@@ -1,0 +1,20 @@
+- name: Publications
+  id: publications
+  description: My Recent Publications
+  first: true
+
+- name: Presentations
+  id: presentations
+  description: My Recent Presentations
+  first: false
+
+- name: Bug Bounties
+  id: bugbounties
+  description: My Recent Bug Bounties and Vulnerabilities
+  first: false
+
+- name: Open Source Software
+  id: software
+  description: My Open Source Project
+  content: adsf
+  first: false

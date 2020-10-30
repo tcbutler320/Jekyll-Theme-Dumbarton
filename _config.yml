@@ -17,6 +17,8 @@ plugins:
 sass:
   sass_dir: _sass
 
+
+
   scholar:
 
     last_name: Dumbarton
@@ -37,7 +39,8 @@ sass:
   
     query: "@*"
   
-
+home_sections:
+  
 
 font_awesome_id: 32a2b2a489
 # =============================
@@ -64,7 +67,7 @@ fbappid:
 
 # Site Settings 
 author: John Doe 
-profile_image: https://res.cloudinary.com/tbutler-org/image/upload/v1603335469/IMG_4333_3_pubgcc.png #/assets/img/avatar/avatar.jpg
+profile_image: /assets/img/avatar/avatar.jpg
 occupation: Developer
 snippet: I am a Developer
 twitter: tbutler0x90
