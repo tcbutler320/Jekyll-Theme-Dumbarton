@@ -1,52 +1,46 @@
 # Dumbarton
+A Jekyll theme designed for academics.
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+## Installation   
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
+Follow the following instructions to install the Dumbarton theme
 
-TODO: Delete this and the text above, and describe your gem
+1) Download the source code 
 
-
-## Installation
-
-Add this line to your Jekyll site's `Gemfile`:
-
-```ruby
-gem "Dumbarton"
+```bash
+git clone https://github.com/tcbutler320/dumbarton.git
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+2) cd into the folder 
 
-```yaml
-theme: Dumbarton
+```bash
+cd dumbarton
 ```
 
-And then execute:
+3) Use bundler to install dependancies
 
-    $ bundle
+```bash
+bundle install
+```
 
-Or install it yourself as:
+4) Start the Jekyll development server
 
-    $ gem install Dumbarton
+```bash
+bundle exec jekyll serve
+```
 
-## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
 
-## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
-## Development
+## Theme Options 
 
-To set up your environment to develop this theme, run `bundle install`.
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
 
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `Dumbarton.gemspec` accordingly.
+### Favicon 
 
-## License
+Site favicons are located at `/assets/img/icons`. You can use a [Favicon Generator](https://realfavicongenerator.net/) to create a new set of icons using any image you'd like. Simply create a package from the aboved linked generator and replace the icons folder. 
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+### Meta Data 
 
+For more information about editing the metadata used in `header.html` can be found on [htmlhead.dev](https://htmlhead.dev/)
