@@ -3,6 +3,10 @@
 ![](https://img.shields.io/badge/Bootstrap-v4.5.3-blue)  
 A Jekyll theme designed for academics, powered by Bootstrap 4. [Demo](https://dumbarton.netlify.app/) page hosted on Netlify.
 
+
+![](screenshot.png)
+
+
 - [Dumbarton](#dumbarton)
   - [Installation](#installation)
   - [Development Roadmap](#development-roadmap)
