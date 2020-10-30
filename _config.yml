@@ -3,7 +3,7 @@ title: Dumbarton Theme
 email: me@dumbarton-theme.com
 description: A jekyll theme for academics
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://dumbarton.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 image:   # used to generate site link preview
