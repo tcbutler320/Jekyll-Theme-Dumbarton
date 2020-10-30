@@ -1,0 +1,22 @@
+---
+layout: default
+permalink: /publications.html
+title: My Recent Publications
+header-img: /assets/img/publications.png
+---
+
+
+<div class="card mb-3">
+  <img class="card-img-top" src="{{ page.header-img }}" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{ page.title }}</h5>
+    <p class="card-text">
+        {% bibliography -f papers %}
+    </p>
+    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+  </div>
+</div>
+
+<p></p>
+
+
