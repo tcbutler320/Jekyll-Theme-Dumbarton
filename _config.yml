@@ -13,6 +13,8 @@ image_alt:  # image description
 theme: 
 plugins:
   - jekyll-feed
+sass:
+  sass_dir: _sass
 
 # =============================
 # META TAG SETTINGS            
@@ -38,6 +40,7 @@ fbappid:
 
 # Site Settings 
 author: John Doe 
+profile_image: https://res.cloudinary.com/tbutler-org/image/upload/v1603335469/IMG_4333_3_pubgcc.png #/assets/img/avatar/avatar.jpg
 occupation: Developer
 snippet: I am a Developer
 twitter: 
