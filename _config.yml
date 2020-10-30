@@ -13,8 +13,30 @@ image_alt:  # image description
 theme: 
 plugins:
   - jekyll-feed
+  - jekyll-scholar
 sass:
   sass_dir: _sass
+
+  scholar:
+
+    last_name: Dumbarton
+  
+    style: apa
+    locale: en
+  
+    source: /_bibliography/
+    bibliography: papers.bib
+    bibliography_template: bib
+  
+    replace_strings: true
+    join_strings: true
+  
+    details_dir: bibliography
+    details_layout: bibtex.html
+    details_link: Details
+  
+    query: "@*"
+  
 
 
 font_awesome_id: 32a2b2a489
@@ -58,16 +80,17 @@ phonenumber:
 
   
 
+include:
+  - _posts
 
-
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

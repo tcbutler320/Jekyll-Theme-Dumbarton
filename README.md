@@ -1,9 +1,12 @@
 # Dumbarton
+![](https://img.shields.io/badge/Bootstrap-v4.5.3-blue)  
 A Jekyll theme designed for academics, powered by Bootstrap 4.
 
 - [Dumbarton](#dumbarton)
   - [Installation](#installation)
   - [Style](#style)
+  - [Academic Options](#academic-options)
+    - [Jekyll Scholar](#jekyll-scholar)
   - [Theme Options](#theme-options)
     - [Favicon](#favicon)
     - [Meta Data](#meta-data)
@@ -43,6 +46,11 @@ bundle exec jekyll serve
 
 **Fontawesome** 
 
+## Academic Options 
+
+### Jekyll Scholar 
+*Excerpt from [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar)*
+> Jekyll-Scholar is for all the academic bloggers out there. It is a set of extensions to Jekyll, the awesome, blog aware, static site generator; it formats your bibliographies and reading lists for the web and gives your blog posts citation super-powers.  
 
 
 ## Theme Options 

@@ -61,3 +61,22 @@ a:link{
   a:active{
     color:black;
   }
+
+.dumbarton-home{
+    width:50%;
+    max-width:300px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.dumbarton-icon{
+  padding-right: 10px;
+  padding-left: 2px;
+  padding-top: 2px;
+}
+
+
+.dumbarton-spacer {
+  padding-bottom: 50px;
+  padding-top: 50px;
+}

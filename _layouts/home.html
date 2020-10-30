@@ -2,6 +2,53 @@
 layout: default
 ---
 
+<div class="card mb-3 mx-auto border-light mb-3" style="max-width: 95%;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="{{ site.profile_image }}" class="card-img rounded-lg" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">{{ page.title }}</h5>
+        <p class="card-text">{{ content | markdownify }}</p>
+        <p class="card-text"><small class="text-muted">Last updated {{ page.date }}</small></p>
+      </div>
+    </div>
+  </div>
+</div>
 
+<div class="card text-center mx-auto" style="max-width: 95%;">
+  <div class="card-header">
+    <ul class="nav nav-tabs card-header-tabs">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Publications</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">A list of my publications</h5>
+    <p class="card-text">
+        <div class="publications">
+            {% bibliography -f papers %}
+        </div>
+    </p>
+  </div>
+</div>
 
-
+<div class="dumbarton-spacer">
+</div>
+<!--
+<div class="media">
+  <img src="{{ site.profile_image }}" class="dumbarton-home" alt="{{ site.author }}">
+  <div class="media-body">
+    <h5 class="mt-0">{{ page.title }}</h5>
+    {{ content | markdownify }}
+  </div>
+</div>
+-->
