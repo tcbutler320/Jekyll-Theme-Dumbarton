@@ -1,75 +1,24 @@
-# Dumbarton Theme 
+# =======================================#
+# -----------DUMBARTON THEME-------------#
+# ----------------By: Tyler Butler-------#
+#-----------------https://tbutler.org----#
+#========================================#
+
 title: Dumbarton Theme 
-email: me@dumbarton-theme.com
+email: 
 description: A jekyll theme for academics
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://dumbarton.netlify.app/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-image:   # used to generate site link preview
-image_alt:  # image description
+baseurl:                                       # the subpath of your site, e.g. /blog
+url: "https://dumbarton.netlify.app/"          # the base hostname & protocol for your site, e.g. http://example.com
+image:                                         # used to generate site link preview
+image_alt:                                     # image description
 
-# Build settings
-theme: 
-plugins:
-  - jekyll-feed
-  - jekyll-scholar
-sass:
-  sass_dir: _sass
-
-
-
-  scholar:
-
-    last_name: Dumbarton
-  
-    style: apa
-    locale: en
-  
-    source: /_bibliography/
-    bibliography: papers.bib
-    bibliography_template: bib
-  
-    replace_strings: true
-    join_strings: true
-  
-    details_dir: bibliography
-    details_layout: bibtex.html
-    details_link: Details
-  
-    query: "@*"
-  
-home_sections:
-  
-
-font_awesome_id: 32a2b2a489
-# =============================
-# META TAG SETTINGS            
-#==============================
-
-# Theme Color for Chrome, Firefox OS and Opera -->
-themecolor: #4285f4
-
-# Site Ownership Settings 
-google-site-verification: #<meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
-yandex-verification: #<meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
-msvalidate: # meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
-alexaVerifyID: # <meta name="alexaVerifyID" content="verification_token"><!-- Alexa Console -->
-pinterestdomain_verify:  #<meta name="p:domain_verify" content="code_from_pinterest"><!-- Pinterest Console-->
-norton-safeweb: # <meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
-
-detectphone: yes # yes or no. Disable automatic detection and formatting of possible phone numbers 
-x-dns-prefetch-control: on # on or off. Completely opt out of DNS prefetching by setting to "off"
-
-# Facebook OpenGraph 
-fbappid:
-
-
-# Site Settings 
+# =======================================#
+# -----------SITE SETTINGS---------------#
+#========================================#
 author: John Doe 
 profile_image: /assets/img/avatar/avatar.jpg
-occupation: Developer
-snippet: I am a Developer
+occupation: 
+snippet: 
 twitter: tbutler0x90
 github: tcbutler320
 linkedin: tyler-b-a700a1aa
@@ -79,9 +28,23 @@ pgp:
 ctftime: 
 phonenumber: 
 
+# =======================================#     # These options include popups, modals, and toasts designed to 
+# -------USER INTERACTION SETTINGS-------#     #   make the site more interactive for the user or to highlight
+#========================================#     #   certain sections. Powered by BootStrap 4 
 
+home_modal: false
+home_toasts: false
+home_popup: false
 
-  
+# =======================================#
+# -----------BUILD SETTINGS--------------#
+#========================================#
+theme: 
+plugins:
+  - jekyll-feed
+  - jekyll-scholar
+sass:
+  sass_dir: _sass
 
 include:
   - _posts
@@ -97,3 +60,41 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+# =======================================#
+# -----JEKYLL SCHOLAR SETTINGS-----------#
+#========================================#
+scholar:
+  last_name: Dumbarton
+  style: apa
+  locale: en
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+  replace_strings: true
+  join_strings: true
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: 
+  query: "@*"
+
+# =======================================#
+# ------------CDN SETTINGS---------------#
+#-------------Used to generate icons-----#
+#========================================#
+font_awesome_id: 32a2b2a489                   # Register for free at https://fontawesome.com/ to get your id
+
+
+# =======================================#    # For more information about these settings, visit https://htmlhead.dev #
+# ------------META TAG SETTINGS----------#
+#========================================#
+themecolor: "#4285f4"                         # Theme Color for Chrome, Firefox OS and Opera -->
+google-site-verification:                     #<meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
+yandex-verification:                          #<meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
+msvalidate:                                   # meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
+alexaVerifyID:                                # <meta name="alexaVerifyID" content="verification_token"><!-- Alexa Console -->
+pinterestdomain_verify:                       #<meta name="p:domain_verify" content="code_from_pinterest"><!-- Pinterest Console-->
+norton-safeweb:                               # <meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
+detectphone: yes                              # yes or no. Disable automatic detection and formatting of possible phone numbers 
+x-dns-prefetch-control: on                    # on or off. Completely opt out of DNS prefetching by setting to "off"
+fbappid:                                      # Facebook OpenGraph 
