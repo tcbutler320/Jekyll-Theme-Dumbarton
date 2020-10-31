@@ -13,8 +13,8 @@
   description: My Recent Bug Bounties and Vulnerabilities
   first: false
 
-- name: Open Source Software
-  id: software
+- name: Projects
+  id: projects
   description: My Open Source Project
   content: adsf
   first: false

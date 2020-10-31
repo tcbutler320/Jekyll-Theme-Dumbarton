@@ -7,18 +7,6 @@ A Jekyll theme designed for academics, powered by Bootstrap 4. [Demo](https://du
 ![](screenshot.png)
 
 
-- [Dumbarton](#dumbarton)
-  - [Installation](#installation)
-  - [Development Roadmap](#development-roadmap)
-  - [Style](#style)
-  - [Academic Options](#academic-options)
-    - [Jekyll Scholar](#jekyll-scholar)
-  - [Theme Options](#theme-options)
-    - [Favicon](#favicon)
-    - [Meta Data](#meta-data)
-    - [Media](#media)
-
-
 ## Installation   
 
 Follow the following instructions to install the Dumbarton theme
@@ -69,6 +57,20 @@ bundle exec jekyll serve
 
 
 ## Theme Options 
+
+## Blog Settings 
+
+### Blog Page Settings   
+
+The main blog page uses Bootstrap 4 Cards to preview individual blog posts. There are several different types of preview styles available. Set the preview by changing the frontmatter on the post *.md file in the `_posts` directory. The current available options are below.  
+
+|   Option       |   Syntax       |  Description       |   Preview  |
+|----------------|----------------|--------------------|------------|
+| card-img-top  | `card-img-top`  |  Image on top      |            |
+| card-dated    | `card-dated`    |  Shows Date        |            |
+| card-no-img   | `card-no-img`   |  No Header Image   |            |
+
+
 
 
 

@@ -1,0 +1,52 @@
+---
+layout: page
+permalink: /blog.html
+title: Blog
+header-img:  
+last-updated: 2020-10-30 5:55 PM
+---
+
+<div class="card-columns">
+  {% for post in site.posts %}
+    {% if post.type == "card-img-top" %}
+      <a href="{{ post.url }}">
+        <div class="card">
+          <img class="card-img-top" src="{{ post.image }}" alt="{{ post.caption }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">{{ post.description }}</p>
+          </div>
+        </div>
+      </a>
+    {% elsif post.type == "card-dated" %}
+      <a href="{{ post.url }}">
+        <div class="card">
+          <img class="card-img-top" src="{{ post.image }}" alt="{{ post.caption }}">
+          <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">{{ post.description }}</p>
+            <p class="card-text"><small class="text-muted">Last updated {{ post.last-updated }}</small></p>
+          </div>
+        </div>  
+      </a>
+    {% elsif post.type == "card-no-img" %}
+      <a href="{{ post.url }}">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">{{ post.description }}</p>
+          </div>
+        </div>
+      </a>
+    {% else %}
+      <a href="{{ post.url }}">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">{{ post.title }}</h5>
+            <p class="card-text">{{ post.description }}</p>
+          </div>
+        </div>
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>

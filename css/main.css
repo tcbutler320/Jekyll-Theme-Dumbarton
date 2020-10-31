@@ -81,6 +81,11 @@ a:link{
   padding-top: 50px;
 }
 
+
+.dumbarton-spacer-sm {
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
 .publications {
   text-align: left;
 }
