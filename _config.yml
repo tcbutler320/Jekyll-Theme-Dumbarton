@@ -22,11 +22,14 @@ snippet:
 twitter: tbutler0x90
 github: tcbutler320
 linkedin: tyler-b-a700a1aa
+stackoverflow: 12935605
 website: https://tbutler.org
 email: 
 pgp: 
 ctftime: 
 phonenumber: 
+
+nav-color: light                               # options: light, dark | Change the color of the navbar
 
 # =======================================#     # These options include popups, modals, and toasts designed to 
 # -------USER INTERACTION SETTINGS-------#     #   make the site more interactive for the user or to highlight
