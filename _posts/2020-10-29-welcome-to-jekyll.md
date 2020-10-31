@@ -1,9 +1,13 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+descrption: "A Preset Post from Jekyll"
+type: card-dated
 date:   2020-10-29 20:01:21 -0400
 categories: jekyll update
 image: /assets/img/example.jpeg
+caption:
+last-updated: 2020-10-26 20:01:21 -0400
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 

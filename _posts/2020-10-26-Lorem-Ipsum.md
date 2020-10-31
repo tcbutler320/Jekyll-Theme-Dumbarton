@@ -1,9 +1,13 @@
 ---
 layout: post
 title:  "Lorem Ipsum"
+descrption: "A Description"
 date:   2020-10-26 20:01:21 -0400
+type: card-img-top
 categories: latin text
 image: /assets/img/example.jpeg
+caption:
+last-updated: 2020-10-26 20:01:21 -0400
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna id volutpat lacus laoreet non curabitur gravida arcu. Quisque non tellus orci ac. Tincidunt tortor aliquam nulla facilisi cras fermentum odio eu. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin aliquam. Maecenas ultricies mi eget mauris pharetra et ultrices neque ornare. Mi proin sed libero enim. Vitae sapien pellentesque habitant morbi tristique. Sit amet commodo nulla facilisi nullam vehicula. A condimentum vitae sapien pellentesque habitant morbi. Id venenatis a condimentum vitae sapien. In nulla posuere sollicitudin aliquam ultrices.
