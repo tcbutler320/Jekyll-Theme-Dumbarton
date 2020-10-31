@@ -67,8 +67,9 @@ The main blog page uses Bootstrap 4 Cards to preview individual blog posts. Ther
 |   Option       |   Syntax       |  Description       |   Preview  |
 |----------------|----------------|--------------------|------------|
 | card-img-top  | `card-img-top`  |  Image on top      |            |
-| card p-3      | `card p-3`      |  Useful for quotes |            |
 | card-dated    | `card-dated`    |  Shows Date        |            |
+| card-no-img   | `card-no-img`   |  No Header Image   |            |
+
 
 
 

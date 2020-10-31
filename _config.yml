@@ -40,11 +40,15 @@ home_popup: false
 # -----------BUILD SETTINGS--------------#
 #========================================#
 theme: 
+markdown: kramdown
+
 plugins:
   - jekyll-feed
   - jekyll-scholar
 sass:
   sass_dir: _sass
+  style: compressed
+
 
 include:
   - _posts
