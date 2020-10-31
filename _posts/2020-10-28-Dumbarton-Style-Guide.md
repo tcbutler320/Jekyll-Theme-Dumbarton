@@ -10,6 +10,10 @@ caption:
 last-updated: 2020-10-26 20:01:21 -0400
 ---
 
++ [Markdown](#markdown)
++ [Bootstrap](#bootstrap)
+
+# Markdown
 
 # Heading `#`  
 ## Heading `##`  
@@ -54,3 +58,5 @@ Here's a simple footnote,[^1] and here's a longer one.[^bignote]
 
     Add as many paragraphs as you like.
 
+# Bootstrap
+This theme uses Bootstrap 4 CDN. In addition to markdown, you can use raw bootstrap HTML to format posts and pages. For a full list of options, check out the [Documentation](https://getbootstrap.com/docs/4.5/getting-started/introduction/) page.
