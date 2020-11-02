@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<div class="card mb-3 mx-auto border-light mb-3" style="max-width: 95%;">
+<div class="card mb-3 mx-auto border-light mb-3" style="max-width: 100%;">
   <div class="row no-gutters">
     <div class="col-md-4">
       <img src="{{ site.profile_image }}" class="card-img rounded-lg" alt="...">
@@ -11,6 +11,22 @@ layout: default
       <div class="card-body">
         <h5 class="card-title">{{ page.title }}</h5>
         <p class="card-text">{{ content | markdownify }}</p>
+        <ul class="list-unstyled">
+          <li class="media my-4">
+            <img src="/assets/img/icons/harvard.png" class="mr-3" alt="...">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Harvard</h5>
+              <p><u>Graduate School of Arts & Sciences</u></p>
+            </div>
+          </li>
+          <li class="media my-4">
+            <img src="/assets/img/icons/harvard.png" class="mr-3" alt="...">
+            <div class="media-body">
+              <h5 class="mt-0 mb-1">Harvard</h5>
+              <p><u>Graduate School of Arts & Sciences</u></p>
+            </div>
+          </li>
+        </ul>
         <p class="card-text"><small class="text-muted">Last updated {{ page.date }}</small></p>
       </div>
     </div>
@@ -19,7 +35,7 @@ layout: default
 
 <!-- Recent Work Section --> 
 <h5 class="card-title text-center">My Latest Work</h5>
-<div class="card mx-auto" style="max-width: 95%;">
+<div class="card mx-auto" style="max-width: 100%;">
   <div class="card-header">
     <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
       {% for section in site.data.sections %}
