@@ -4,12 +4,16 @@
 A Jekyll theme designed for academics, powered by Bootstrap 4. [Demo](https://dumbarton.netlify.app/) page hosted on Netlify.
 
 
-![](screenshot.png)
+![](screenshot.png)  
+
+![](screenshot2.png)
+
+  
 
 
 ## Installation   
 
-Follow the following instructions to install the Dumbarton theme
+Follow the following instructions to install the Dumbarton theme  
 
 1) Download the source code 
 
