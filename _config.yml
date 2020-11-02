@@ -16,7 +16,7 @@ image_alt:                                     # image description
 # -----------SITE SETTINGS---------------#
 #========================================#
 author: John Doe 
-profile_image: /assets/img/avatar/avatar.jpg
+profile_image: /assets/img/avatar/avatar.png
 occupation: 
 snippet: 
 twitter: tbutler0x90
@@ -24,14 +24,20 @@ github: tcbutler320
 linkedin: tyler-b-a700a1aa
 stackoverflow: 12935605
 website: https://tbutler.org
+codepen: tcbutler320
 email: 
 pgp: 
 ctftime: 
 phonenumber: 
 
-nav-color: light                               # options: light, dark | Change the color of the navbar
-
-# =======================================#     # These options include popups, modals, and toasts designed to 
+# =======================================#
+# -----------THEME SETTINGS--------------#
+#===================================
+nav-color: transparent                               # options: light, dark, transparent | Change the color of the navbar
+font: Crimson Text                             # Choose any Google API Font,see a list here https://fonts.google.com/?
+                                               #        My Top choices are [Bitter,Crimson Text] 
+nav-dIcon: "fas fa-caret-down"                 # Change the navbar dropdown (for mobile or small screen sizes) to any fontawesome icon. for a list of icons visit https://fontawesome.com/ 
+                                               # =======================================#     # These options include popups, modals, and toasts designed to 
 # -------USER INTERACTION SETTINGS-------#     #   make the site more interactive for the user or to highlight
 #========================================#     #   certain sections. Powered by BootStrap 4 
 
