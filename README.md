@@ -86,3 +86,13 @@ For more information about editing the metadata used in `header.html` can be fou
 ### Media
 
 Sample images used in the Dumbarton Demo site were found on [unsplash](https://unsplash.com/)
+
+
+## Thanks 
+
+*Images*   
+Special thanks to the following indivuals for their images  
++  [Peter Secan](https://unsplash.com/@phsecan)  
++  [Terry Boynton](https://unsplash.com/@terry_boynton)
++  [Stephen Valentin](https://unsplash.com/@valentinsteph)
++  [Laurasaman](https://unsplash.com/@laurasamang)

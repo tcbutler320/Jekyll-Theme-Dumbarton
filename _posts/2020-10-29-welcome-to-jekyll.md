@@ -5,7 +5,7 @@ descrption: "A Preset Post from Jekyll"
 type: card-dated
 date:   2020-10-29 20:01:21 -0400
 categories: jekyll update
-image: /assets/img/example.jpeg
+image: /assets/img/posts/blog-paris.jpg
 caption:
 last-updated: 2020-10-26 20:01:21 -0400
 categories: post

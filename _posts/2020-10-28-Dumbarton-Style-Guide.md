@@ -5,7 +5,7 @@ descrption: "The Only Useful Post Here"
 type: card-dated
 date:   2020-10-28 20:01:21 -0400
 categories: Dumabrton style
-image: /assets/img/example.jpeg
+image: /assets/img/posts/blog-paris2.jpg
 caption:
 last-updated: 2020-10-26 20:01:21 -0400
 categories: post
