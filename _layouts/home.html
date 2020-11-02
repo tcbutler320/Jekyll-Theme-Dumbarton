@@ -40,18 +40,18 @@ layout: default
         {% for section in site.data.sections %}
           {% if section.first %}
             {% if section.name == "Publications" %}
-              <div class="tab-pane active" id="{{section.id}}" role="tabpanel">
+              <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
                 <h5 class="card-title text-center">{{section.description}}</h5>
                 <p class="card-text">{% bibliography -f papers --max 2 %}</p>
               </div>
             {% else %}
-              <div class="tab-pane" id="{{section.id}}" role="tabpanel">
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
                 <p class="card-text">{{section.description}}</p>
               </div>
             {% endif %}
           {% else %}
             {% if section.name == "Bug Bounties" %}
-                <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
+                <div class="tab-pane  overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
                   <h5 class="card-title text-center">{{section.description}}</h5>
                   <p class="card-text">
                       <table class="table">
@@ -81,14 +81,14 @@ layout: default
                   </p>
                 </div>    
             {% elsif section.name == "Presentations" %}
-              <div class="tab-pane" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
                 <h5 class="card-title text-center">{{section.description}}</h5>
                 <p class="card-text">{% bibliography -f presentations %}</p>              
               </div>
            {% elsif section.name == "Projects" %}
                 <!-- TODO  Add project secion-->
             {% else %}
-              <div class="tab-pane" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab"> 
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab"> 
                 <h5 class="card-title text-center">{{section.description}}</h5>
                 <p class="card-text">{{section.content}}</p>
               </div>
@@ -98,6 +98,10 @@ layout: default
       </div>
   </div>
 </div>
+
+<!-- Animate.js Animatin Library
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
+-->
 
 
 <script>
@@ -113,6 +117,4 @@ layout: default
         $(".toast").toast('show');
     });
 </script>
-
-
 

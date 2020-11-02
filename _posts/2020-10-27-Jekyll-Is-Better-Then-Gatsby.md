@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Jekyll is Better Then Gatsby"
+title:  "Posts Can Also Not Have Images"
 descrption: "I'll Tell You Why"
 date:   2020-10-27 20:01:21 -0400
 type: card-dated
 categories: Jekyll Gatsby
-image: /assets/img/example.jpeg
+image: 
 caption:
 last-updated: 2020-10-26 20:01:21 -0400
 categories: post
