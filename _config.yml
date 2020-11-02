@@ -16,7 +16,7 @@ image_alt:                                     # image description
 # -----------SITE SETTINGS---------------#
 #========================================#
 author: John Doe 
-profile_image: /assets/img/avatar/avatar.jpg
+profile_image: /assets/img/avatar/avatar.png
 occupation: 
 snippet: 
 twitter: tbutler0x90
@@ -29,8 +29,12 @@ pgp:
 ctftime: 
 phonenumber: 
 
+# =======================================#
+# -----------THEME SETTINGS--------------#
+#===================================
 nav-color: light                               # options: light, dark | Change the color of the navbar
-
+font: Crimson Text                             # Choose any Google API Font,see a list here https://fonts.google.com/?
+                                               #        My Top choices are [Bitter,Crimson Text] 
 # =======================================#     # These options include popups, modals, and toasts designed to 
 # -------USER INTERACTION SETTINGS-------#     #   make the site more interactive for the user or to highlight
 #========================================#     #   certain sections. Powered by BootStrap 4 

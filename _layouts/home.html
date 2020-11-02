@@ -5,7 +5,7 @@ layout: default
 <div class="card mb-3 mx-auto border-light mb-3" style="max-width: 100%;">
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src="{{ site.profile_image }}" class="card-img rounded-lg" alt="...">
+      <img src="{{ site.profile_image }}" class="img-thumbnail rounded float-left" alt="...">
     </div>
     <div class="col-md-8">
       <div class="card-body">
@@ -20,10 +20,10 @@ layout: default
             </div>
           </li>
           <li class="media my-4">
-            <img src="/assets/img/icons/harvard.png" class="mr-3" alt="...">
+            <img src="/assets/img/icons/princeton.png" class="mr-3" alt="...">
             <div class="media-body">
-              <h5 class="mt-0 mb-1">Harvard</h5>
-              <p><u>Graduate School of Arts & Sciences</u></p>
+              <h5 class="mt-0 mb-1">Princeton</h5>
+              <p><u>School of Public and International Affairs</u></p>
             </div>
           </li>
         </ul>
@@ -58,7 +58,7 @@ layout: default
             {% if section.name == "Publications" %}
               <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
                 <h5 class="card-title text-center">{{section.description}}</h5>
-                <p class="card-text">{% bibliography -f papers --max 2 %}</p>
+                <p class="card-text">{% bibliography -f papers %}</p>
               </div>
             {% else %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel">
