@@ -13,7 +13,7 @@
   <p align="center">
     A simple Jekyll theme for academics
     <br />
-    <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton"><strong>Explore the docs »</strong></a>
+    <a href="#table-of-contents"><strong>Explore the docs »</strong></a>
     <br />
     <br />
     <a href="https://dumbarton.netlify.app/">View Demo</a>
