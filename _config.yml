@@ -34,6 +34,8 @@ phonenumber:
 # -----------THEME SETTINGS--------------#
 #===================================
 nav-color: transparent                               # options: light, dark, transparent | Change the color of the navbar
+footer-color:
+home-highlights-color:
 font: Crimson Text                             # Choose any Google API Font,see a list here https://fonts.google.com/?
                                                #        My Top choices are [Bitter,Crimson Text] 
 nav-dIcon: "fas fa-caret-down"                 # Change the navbar dropdown (for mobile or small screen sizes) to any fontawesome icon. for a list of icons visit https://fontawesome.com/ 

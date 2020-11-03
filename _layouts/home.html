@@ -32,7 +32,7 @@ layout: default
   </div>
 </div>
 
-<!-- RECENT WORK SECTION --> 
+<!-- HOME HIGHLIGHTS SECTION --> 
 <h5 class="card-title text-center"></h5>
 <div class="card mx-auto" style="max-width: 100%;">
   <div class="card-header">
@@ -64,38 +64,8 @@ layout: default
                 <p class="card-text">{{section.description}}</p>
               </div>
             {% endif %}
-          {% else %}
-            {% if section.name == "Bug Bounties" %}
-                <div class="tab-pane  overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                  <h5 class="card-title text-center">{{section.description}}</h5>
-                  <p class="card-text">
-                      <table class="table">
-                        <thead class="thead-dark">
-                          <tr>
-                            <th scope="col">Date</th>
-                            <th scope="col">Title</th>
-                            <th scope="col">CVE</th>
-                            <th scope="col">Platform</th>
-                            <th scope="col">Vendor</th>
-                            <th scope="col">Link</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          {% for entry in site.data.bounties %}
-                            <tr>
-                              <th scope="row">{{ entry.Date }}</th>
-                              <td>{{ entry.Title }}</td>
-                              <td>{{ entry.CVE }}</td>
-                              <td>{{ entry.Platform }}</td>
-                              <td>{{ entry.Vendor }}</td>
-                              <td><a href="{{ entry.Link }}"><i class="fas fa-external-link-alt"></i></a></td>
-                            </tr>
-                          {% endfor %}
-                        </tbody>
-                      </table>
-                  </p>
-                </div>    
-            {% elsif section.name == "Presentations" %}
+          {% else %}  
+            {% if section.name == "Presentations" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
                 <h5 class="card-title text-center">{{section.description}}</h5>
                 <p class="card-text">{% bibliography -f presentations %}</p>              
@@ -116,6 +86,26 @@ layout: default
                     </div>
                   {% endfor %}
                 </div>        
+              </div>
+            {% elsif section.name == "Courses" %}
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
+                <h5 class="card-title text-center">{{section.description}}</h5>
+                <div class="row">
+                  <div class="col-4">
+                    <div class="list-group" id="list-tab" role="tablist">
+                      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">POL 554 International Security Studies</a>
+                      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">POL 585 International Political Economy</a>
+                      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">POL 502 Mathematics for Political Science</a>
+                    </div>
+                  </div>
+                  <div class="col-8">
+                    <div class="tab-content" id="nav-tabContent">
+                      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                  </div>
+                </div>
               </div>
             {% else %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
