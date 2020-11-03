@@ -1,15 +1,47 @@
-# Dumbarton
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 [![Netlify Status](https://api.netlify.com/api/v1/badges/24a6b9c4-6586-4e8d-8540-92942a0c47e8/deploy-status)](https://app.netlify.com/sites/admiring-bassi-e955ad/deploys)
 ![](https://img.shields.io/badge/Bootstrap-v4.5.3-blue)  
-A Jekyll theme designed for academics, powered by Bootstrap 4. [Demo](https://dumbarton.netlify.app/) page hosted on Netlify.
 
+<!-- PROJECT LOGO -->
+<p align="center">
+  <h1 align="center">Dumbarton</h1>
+  <p align="center">
+    A simple Jekyll theme for academics
+    <br />
+    <a href="#table-of-contents"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://dumbarton.netlify.app/">View Demo</a>
+    ·
+    <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton/issues">Request Feature</a>
+  </p>
+</p>
 
 ![](screenshot.png)  
-
 ![](screenshot2.png)
 
-  
+## Table of Contents
 
+- [Table of Contents](#table-of-contents)
+- [Installation](#installation)
+- [Development Roadmap](#development-roadmap)
+- [Style](#style)
+- [Academic Options](#academic-options)
+  - [Jekyll Scholar](#jekyll-scholar)
+- [Theme Options](#theme-options)
+- [Blog Settings](#blog-settings)
+  - [Blog Page Settings](#blog-page-settings)
+  - [Favicon](#favicon)
+  - [Meta Data](#meta-data)
+  - [Media](#media)
+- [Thanks](#thanks)
 
 ## Installation   
 
@@ -104,3 +136,20 @@ Special thanks to the following indivuals for their images
 +  [Yancy Min](https://unsplash.com/@yancymin)
 +  [Safar Safarov](https://unsplash.com/@codestorm)
 +  [Emile Perron](https://unsplash.com/@emilep)
+
+
+
+<!-- MARKDOWN LINKS AND IMAGES --->
+
+[contributors-shield]: https://img.shields.io/github/contributors/tcbutler320/Jekyll-Theme-Dumbarton.svg?style=flat-square
+[contributors-url]: https://github.com/tcbutler320/Jekyll-Theme-Dumbarton/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/tcbutler320/Jekyll-Theme-Dumbarton.svg?style=flat-square
+[forks-url]: https://github.com/tcbutler320/Jekyll-Theme-Dumbarton/network/members
+[stars-shield]: https://img.shields.io/github/stars/tcbutler320/Jekyll-Theme-Dumbartonsvg?style=flat-square
+[stars-url]: https://github.com/tcbutler320/Jekyll-Theme-Dumbarton/stargazers
+[issues-shield]: https://img.shields.io/github/issues/tcbutler320/Jekyll-Theme-Dumbarton.svg?style=flat-square
+[issues-url]: https://github.com/tcbutler320/Jekyll-Theme-Dumbarton/issues
+[license-shield]: https://img.shields.io/github/license/tcbutler320Jekyll-Theme-Dumbarton.svg?style=flat-square
+[license-url]: https://github.com/tcbutler320/Jekyll-Theme-Dumbarton/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/tyler-b-a700a1aa

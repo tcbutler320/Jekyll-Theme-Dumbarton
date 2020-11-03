@@ -2,11 +2,21 @@
 layout: page
 permalink: /about.html
 title: About Me
-header-img:  /assets/img/publications.png
+header-img: 
 last-updated: 2020-10-30 5:55 PM
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero id faucibus nisl tincidunt eget. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Duis convallis convallis tellus id interdum velit. Ultricies mi eget mauris pharetra et. Odio pellentesque diam volutpat commodo sed egestas. Eu mi bibendum neque egestas congue quisque. Augue lacus viverra vitae congue eu consequat ac felis donec. Ultrices vitae auctor eu augue ut lectus arcu. Eu consequat ac felis donec et. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget.
+
+
+*This is an example of code*
+```js
+<script>
+    $(document).ready(function() {
+        $(".toast").toast('show');
+    });
+</script>
+```
 
 Semper eget duis at tellus at urna condimentum. Elit scelerisque mauris pellentesque pulvinar pellentesque habitant. Suspendisse faucibus interdum posuere lorem ipsum dolor. Volutpat commodo sed egestas egestas fringilla phasellus faucibus. Maecenas accumsan lacus vel facilisis volutpat est velit egestas dui. Massa placerat duis ultricies lacus. Fermentum et sollicitudin ac orci phasellus egestas tellus. Placerat orci nulla pellentesque dignissim enim sit amet. Tellus mauris a diam maecenas sed enim. Tortor vitae purus faucibus ornare. Lectus quam id leo in vitae turpis massa. Porttitor eget dolor morbi non arcu risus quis varius. Felis eget nunc lobortis mattis aliquam. Integer vitae justo eget magna fermentum.
 
