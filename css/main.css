@@ -89,21 +89,6 @@ CORE
 	transition-duration: .15s;
 }
 
-/*
-* These styles for text decoration. The demo will be work without it
-*/
-
-.link{
-	font-weight: 700;
-	text-transform: uppercase;
-}
-
-.link:focus{
-	outline: 2px solid #fed330;
-	outline-offset: .5rem;
-}
-
-
 
   /* Custom page CSS
   -------------------------------------------------- */
