@@ -5,7 +5,7 @@ description: "A Description"
 date:   2020-10-26 20:01:21 -0400
 type: card-img-top
 categories: latin text
-image: /assets/img/posts/blog1.jpeg
+image: 
 caption:
 last-updated: 2020-10-26 20:01:21 -0400
 categories: post

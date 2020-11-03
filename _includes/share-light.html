@@ -1,0 +1,7 @@
+<!-- Displays Social Media Icons based on _config.yml settings -->
+
+<span style="color: white">
+    <a class="social-link" href="http://twitter.com/share?text={{ page.title }}&url={{ site.url | append: page.url }}"><span style="color: white"><i class="fab fa-twitter-square fa-lg"></i></span></a>
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ site.url | append: page.url | url_encode  }}&title={{ page.title | url_encode }}&summary={{ page.description | url_encode }}&source={{ site.title | url_encode }}"><span style="color: white"><i class="fab fa-linkedin fa-lg"></i></span></a>
+    {{ endif }}
+</span>
