@@ -53,6 +53,9 @@ home_popup: false
 theme: 
 markdown: kramdown
 
+kramdown:
+  syntax_highlighter: rouge
+
 plugins:
   - jekyll-feed
   - jekyll-scholar

@@ -91,7 +91,7 @@ layout: default
             {% elsif section.name == "Projects" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
                 <h5 class="card-title text-center"><a href="/{{ section.url }}" class="r-link link text-underlined">{{section.description}}</a></h5>
-                <div class="row row-cols-1 row-cols-md-2">
+                <div class="row row-cols-1 row-cols-md-2 ">
                   {% for projects in site.data.projects %}
                     <div class="col mb-4">
                       <div class="card">
@@ -105,25 +105,49 @@ layout: default
                   {% endfor %}
                 </div>        
               </div>
-            {% elsif section.name == "Courses" %}
+            {% elsif section.name == "Teaching" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
                 <h5 class="card-title text-center"><a href="/{{ section.url }}" class="r-link link text-underlined">{{section.description}}</a></h5>
-                <div class="row">
-                  <div class="col-4">
-                    <div class="list-group" id="list-tab" role="tablist">
-                      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">POL 554 International Security Studies</a>
-                      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">POL 585 International Political Economy</a>
-                      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">POL 502 Mathematics for Political Science</a>
+                {% for courses in site.data.courses %}
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            {{ courses.Course }}
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                          {{ courses.description }}
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <div class="col-8">
-                    <div class="tab-content" id="nav-tabContent">
-                      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-                      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                {% endfor %}
+              </div>
+            {% elsif section.name == "Coursework" %}
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
+                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="r-link link text-underlined">{{section.description}}</a></h5>
+                {% for courses in site.data.courses %}
+                  <div class="accordion" id="accordionExample">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                          <button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            {{ courses.Course }}
+                          </button>
+                        </h2>
+                      </div>
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                        <div class="card-body">
+                          {{ courses.description }}
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
+                {% endfor %}
               </div>
             {% else %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  

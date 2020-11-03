@@ -9,6 +9,9 @@ layout: default
   {% endif %}
   <div class="card-body">
     <h5 class="card-title">{{ page.title }}</h5>
+    {% if page.author %}
+    <h6 class="card-subtitle mb-2 text-muted">By: {{ page.author }}</h6>
+    {% endif %}
     <p class="card-text">{{ content }}</p>
   </div>
   <div class="card-footer bg-dark text-white">Share this post on social  &nbsp;&nbsp;&nbsp;&nbsp; {% include share-light.html %}</div>
