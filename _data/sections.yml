@@ -1,20 +1,27 @@
 - name: Publications
   id: publications
-  description: My Recent Publications
+  description: My Publications
   first: true
 
 - name: Presentations
   id: presentations
-  description: My Recent Presentations
+  description: My Presentations
   first: false
 
 - name: Bug Bounties
   id: bugbounties
-  description: My Recent Bug Bounties and Vulnerabilities
+  description: My Bug Bounties and Vulnerabilities
+  first: false
+
+- name: Courses
+  id: courses
+  description: Releveant Course Work
+  content: 
   first: false
 
 - name: Projects
   id: projects
-  description: My Open Source Project
-  content: adsf
+  description: My Projects
+  content: 
   first: false
+

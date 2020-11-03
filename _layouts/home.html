@@ -2,6 +2,7 @@
 layout: default
 ---
 
+<!-- ABOUT ME SECTION -->
 <div class="card mb-3 mx-auto border-white mb-3" style="max-width: 100%;">
   <div class="row no-gutters">
     <div class="col-md-4">
@@ -18,7 +19,9 @@ layout: default
             <div class="media-body">
               <h5>{{ entry.School }}</h5>
               <p><i>{{ entry.Program }}</i></p>
-              <p>{{ entry.Degree }}</p>
+              {% if entry.Degree %}
+                <p>{{ entry.Degree }}</p>
+              {% endif %}
             </div>
           </li>
           {% endfor %}
@@ -29,7 +32,7 @@ layout: default
   </div>
 </div>
 
-<!-- Recent Work Section --> 
+<!-- RECENT WORK SECTION --> 
 <h5 class="card-title text-center"></h5>
 <div class="card mx-auto" style="max-width: 100%;">
   <div class="card-header">
@@ -97,12 +100,27 @@ layout: default
                 <h5 class="card-title text-center">{{section.description}}</h5>
                 <p class="card-text">{% bibliography -f presentations %}</p>              
               </div>
-           {% elsif section.name == "Projects" %}
-                <!-- TODO  Add project secion-->
-            {% else %}
-              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab"> 
+            {% elsif section.name == "Projects" %}
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
                 <h5 class="card-title text-center">{{section.description}}</h5>
-                <p class="card-text">{{section.content}}</p>
+                <div class="row row-cols-1 row-cols-md-2">
+                  {% for projects in site.data.projects %}
+                    <div class="col mb-4">
+                      <div class="card">
+                        <img src="{{ projects.image }}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{ projects.title }}</h5>
+                          <p class="card-text">{{ projects.description }}</p>
+                        </div>
+                      </div>
+                    </div>
+                  {% endfor %}
+                </div>        
+              </div>
+            {% else %}
+              <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
+                <h5 class="card-title text-center">{{section.description}}</h5>
+                <p class="card-text">{{ section.content }} </p>              
               </div>
             {% endif %}
           {% endif %}
@@ -111,11 +129,12 @@ layout: default
   </div>
 </div>
 
-<!-- Animate.js Animatin Library
+<!-- ANIMATE.JS ANIMATE LIBRARY
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
 -->
 
 
+<!--JS FUNCTION FOR RECENT WORK SECTION -->
 <script>
     $('#test-list a').on('click', function (e) {
     e.preventDefault()
@@ -123,7 +142,7 @@ layout: default
     })
 </script> 
 
-
+<!-- OPTIONAL TOAST JS FUNCTION-->
 <script>
     $(document).ready(function() {
         $(".toast").toast('show');
