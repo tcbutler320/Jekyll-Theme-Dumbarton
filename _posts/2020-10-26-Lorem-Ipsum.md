@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Lorem Ipsum"
-descrption: "A Description"
+description: "A Description"
 date:   2020-10-26 20:01:21 -0400
 type: card-img-top
 categories: latin text
