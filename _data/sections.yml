@@ -1,12 +1,8 @@
 - name: Publications
   id: publications
   description: My Publications
+  url: publications.html
   first: true
-
-- name: Presentations
-  id: presentations
-  description: My Presentations
-  first: false
   
 - name: Courses
   id: courses
@@ -18,5 +14,6 @@
   id: projects
   description: My Projects
   content: 
+  url: projects.html
   first: false
 
