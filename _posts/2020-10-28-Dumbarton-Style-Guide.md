@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Dumbarton Style Guide"
-descrption: "The Only Useful Post Here"
+description: "The Only Useful Post Here"
 type: card-dated
 date:   2020-10-28 20:01:21 -0400
 categories: Dumabrton style
@@ -13,6 +13,7 @@ categories: post
 
 + [Markdown](#markdown)
 + [Bootstrap](#bootstrap)
++ [Custom CSS]
 
 # Markdown
 
@@ -720,3 +721,14 @@ sagittis lacus vel augue laoreet rutrum faucibus.">
     });
   }
 </script>
+
+
+
+
+Links using markdown are normal and styled like this ...  
+
+[A link](https://codepen.io/melnik909/pen/KGxdjY)
+
+But if you use the right class, it can look like this...  
+
+<a href="https://codepen.io/melnik909/pen/KGxdjY" class="r-link link text-underlined">read more</a>

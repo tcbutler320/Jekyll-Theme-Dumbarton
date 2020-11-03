@@ -12,20 +12,16 @@ layout: default
         <h5 class="card-title">{{ page.title }}</h5>
         <p class="card-text">{{ content | markdownify }}</p>
         <ul class="list-unstyled">
-          <li class="media my-4">
-            <img src="/assets/img/icons/harvard.png" class="mr-3" alt="...">
+        {% for entry in site.data.education %}
+          <li class="media">
+            <img src="{{ entry.Icon }}" class="mr-3" alt="...">
             <div class="media-body">
-              <h5 class="mt-0 mb-1">Harvard</h5>
-              <p><u>Graduate School of Arts & Sciences</u></p>
+              <h5>{{ entry.School }}</h5>
+              <p><i>{{ entry.Program }}</i></p>
+              <p>{{ entry.Degree }}</p>
             </div>
           </li>
-          <li class="media my-4">
-            <img src="/assets/img/icons/princeton.png" class="mr-3" alt="...">
-            <div class="media-body">
-              <h5 class="mt-0 mb-1">Princeton</h5>
-              <p><u>School of Public and International Affairs</u></p>
-            </div>
-          </li>
+          {% endfor %}
         </ul>
         <p class="card-text"><small class="text-muted">Last updated {{ page.date }}</small></p>
       </div>

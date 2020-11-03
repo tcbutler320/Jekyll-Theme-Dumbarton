@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
-descrption: "A Preset Post from Jekyll"
+description: "A Preset Post from Jekyll"
 type: card-dated
 date:   2020-10-29 20:01:21 -0400
 categories: jekyll update

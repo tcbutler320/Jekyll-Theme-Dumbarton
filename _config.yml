@@ -6,7 +6,7 @@
 
 title: Dumbarton Theme 
 email: 
-description: A jekyll theme for academics
+description: A minimalistic jekyll theme for academics
 baseurl:                                       # the subpath of your site, e.g. /blog
 url: "https://dumbarton.netlify.app/"          # the base hostname & protocol for your site, e.g. http://example.com
 image:                                         # used to generate site link preview

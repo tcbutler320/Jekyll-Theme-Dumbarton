@@ -1,5 +1,16 @@
 ---
 layout: default
 ---
+<div class="card border-light mb-3">
+  {% if page.image %}
+    <img src="{{ page.image }}" class="card-img-top" alt="{{ page.caption }}">
+  {% else %}
+  <div class="card border-light">
+  {% endif %}
+  <div class="card-body">
+    <h5 class="card-title">{{ page.title }}</h5>
+    <p class="card-text">{{ content }}</p>
+  </div>
+  <div class="card-footer bg-dark text-white">Share this post on social  &nbsp;&nbsp;&nbsp;&nbsp; {% include share-light.html %}</div>
 
-{{ content }}
+</div>

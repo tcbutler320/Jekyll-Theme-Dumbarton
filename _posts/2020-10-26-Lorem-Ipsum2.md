@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Lorem Ipsum"
+title:  "Another Blog Post"
 description: "A Description"
 date:   2020-10-26 20:01:21 -0400
 type: card-img-top
 categories: latin text
-image: 
+image: /assets/img/posts/blog6.jpeg
 caption:
 last-updated: 2020-10-26 20:01:21 -0400
 categories: post
