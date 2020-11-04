@@ -72,10 +72,6 @@ bundle exec jekyll serve
 
 ## Development Roadmap 
 
-
-+ [x] Jekyll Scholar publication formatting
-+ [ ] Include more [Awesome Jekyll Plug ins](https://github.com/planetjekyll/awesome-jekyll-plugins)
-+ [ ] Create custom CSS for jekyll-scholar formatting
 + [ ] Add [Jekyll-Admin](https://github.com/jekyll/jekyll-admin) for CMS 
 
 ## Style 
