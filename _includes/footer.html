@@ -1,5 +1,5 @@
 {% if site.color-scheme=="demo" %}
-<footer class="footer" style="background-color: #00334e;">
+<footer class="footer" style="background-color:{{ site.demo-color }};">
     <div class="container">
      <span class="text-white">{{ site.title }}</span>
         {% include social.html %}
@@ -8,7 +8,7 @@
 {% else %}
 <footer class="footer">
     <div class="container">
-     <span class="text-muted">{{ site.title }}</span>
+     <span class="text-dark">{{ site.title }}</span>
         {% include social.html %}
     </div>
 </footer>

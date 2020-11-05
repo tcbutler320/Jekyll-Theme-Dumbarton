@@ -18,7 +18,7 @@ html {
     line-height: 60px; /* Vertically center the text there */
     background-color: #f5f5f5;
   }
-  
+
   
   /* Custom page CSS
   -------------------------------------------------- */
@@ -43,20 +43,6 @@ html {
     }
   }
 
-.links {
-  a.btn {
-    color: var(--global-text-color);
-    border: 1px solid var(--global-text-color);
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
-    &:hover {
-      color: var(--global-theme-color);
-      border-color: var(--global-theme-color);
-    }
-  }
-}
 
 .dropdown-toggle::after {
   display: none;

@@ -10,7 +10,7 @@
 {% elsif site.nav-color == "custom"  %}
 <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
 {% elsif site.nav-color == "demo"  %}
-<nav class="navbar navbar-expand-lg" style="background-color: #00334e;">
+<nav class="navbar navbar-expand-lg" style="background-color:{{ site.demo-color }};">
 {% elsif site.nav-color == "linear-gradiant"  %}
 <nav class="navbar navbar-expand-lg" style="background-color: #FF9A8B; background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);">
 {% else %}
@@ -31,9 +31,15 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
         {% for item in site.data.nav.links %}
-            <li class="nav-item">
-                <a href="{{ item.url }}" class="nav-link text-white">{{ item.title }}</a>
-            </li>
+            {% if site.nav-color == "demo"  %}
+              <li class="nav-item">
+                  <a href="{{ item.url }}" class="nav-link text-white">{{ item.title }}</a>
+              </li>
+            {% else %}
+              <li class="nav-item">
+                  <a href="{{ item.url }}" class="nav-link text-dark">{{ item.title }}</a>
+              </li>
+            {% endif %}
         {% endfor %}
     </ul>
     <ul class="navbar-nav  justify-content-end">

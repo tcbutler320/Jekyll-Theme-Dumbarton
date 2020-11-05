@@ -6,12 +6,21 @@ layout: default
 <div class="card mb-3 mx-auto border-white mb-3" style="max-width: 100%;">
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src="{{ site.profile_image }}" class="img-thumbnail float-left animate__animated animate__fadeInLeft" alt="...">
+      {% if site.animate %}
+        <img src="{{ site.profile_image }}" class="img-thumbnail float-left animate__animated animate__fadeInLeft" alt="...">
+      {% else %}
+        <img src="{{ site.profile_image }}" class="img-thumbnail float-left" alt="...">
+      {% endif %}
     </div>
     <div class="col-md-8">
+      {% if site.animate %}
       <div class="card-body animate__animated animate__fadeInRight">
+      {% else %}
+      <div class="card-body">
+      {% endif %}
         <h5 class="card-title">{{ page.title }}</h5>
         <p class="card-text">{{ content | markdownify }}</p>
+        <h5 class="card-title">Education</h5>
         <ul class="list-unstyled">
         {% for entry in site.data.education %}
           <li class="media">
@@ -58,7 +67,7 @@ layout: default
 <div class="card mx-auto" style="max-width: 100%;">
 {% endif %}
   {% if site.color-scheme=="demo" %}
-  <div class="card-header" style="background-color: #00334e;">
+  <div class="card-header" style="background-color:{{ site.demo-color }};">
   {% else %}
   <div class="card-header">
   {% endif %}
@@ -90,7 +99,7 @@ layout: default
           {% if section.first %}
             {% if section.name == "Publications" %}
               <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
-                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="r-link link text-underlined">{{section.description}}</a></h5>
+                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
                 <p class="card-text">{% bibliography -f papers %}</p>
               </div>
             {% else %}
@@ -101,12 +110,12 @@ layout: default
           {% else %}  
             {% if section.name == "Presentations" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="r-link link text-underlined">{{section.description}}</a></h5>
+                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
                 <p class="card-text">{% bibliography -f presentations %}</p>              
               </div>
             {% elsif section.name == "Projects" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="r-link link text-underlined">{{section.description}}</a></h5>
+                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
                 <div class="row row-cols-1 row-cols-md-2 ">
                   {% for projects in site.data.projects %}
                     <div class="col mb-4">
@@ -123,7 +132,7 @@ layout: default
               </div>
             {% elsif section.name == "Teaching" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="r-link link text-underlined">{{section.description}}</a></h5>
+                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
                 {% for courses in site.data.courses %}
                   <div class="accordion" id="accordionExample">
                     <div class="card">
@@ -145,29 +154,17 @@ layout: default
               </div>
             {% elsif section.name == "Coursework" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="r-link link text-underlined">{{section.description}}</a></h5>
+                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
+                <div class="list-group">
                 {% for courses in site.data.courses %}
-                  <div class="accordion" id="accordionExample">
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            {{ courses.Course }}
-                          </button>
-                        </h2>
-                      </div>
-                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
-                          {{ courses.description }}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <button type="button" class="list-group-item list-group-item-action">{{ courses.Course }}</button>
                 {% endfor %}
+                </div>
+
               </div>
             {% else %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="r-link link text-underlined">{{section.description}}</a></h5>
+                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
                 <p class="card-text">{{ section.content }} </p>              
               </div>
             {% endif %}
