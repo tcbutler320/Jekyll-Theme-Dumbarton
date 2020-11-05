@@ -36,8 +36,9 @@ phonenumber:
 nav-color: transparent                               # options: light, dark, transparent, primary | Change the color of the navbar
 footer-color:
 home-highlights-color:
-font: Crimson Text                             # Choose any Google API Font,see a list here https://fonts.google.com/?
-                                               #        My Top choices are [Bitter,Crimson Text] 
+google-font: Roboto:wght@300 #Itim #Crimson+Text                            # Choose any Google API Font,see a list here https://fonts.google.com/?
+google-font-name: Roboto #Itim #Crimson Text
+#        My Top choices are [Bitter,Crimson Text] 
 nav-dIcon: "fas fa-caret-down"                 # Change the navbar dropdown (for mobile or small screen sizes) to any fontawesome icon. for a list of icons visit https://fontawesome.com/ 
 animate:                                       # false or true, uses animate.css to animate certain functions
 # =======================================#     # These options include popups, modals, and toasts designed to 
