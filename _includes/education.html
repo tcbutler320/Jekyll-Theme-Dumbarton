@@ -1,0 +1,15 @@
+        <h5 class="card-title">Education</h5>
+        <ul class="list-unstyled">
+        {% for entry in site.data.education %}
+          <li class="media">
+            <img src="{{ entry.Icon }}" class="mr-3" alt="...">
+            <div class="media-body">
+              <h5>{{ entry.School }}</h5>
+              <p><i>{{ entry.Program }}</i></p>
+              {% if entry.Degree %}
+                <p>{{ entry.Degree }}</p>
+              {% endif %}
+            </div>
+          </li>
+          {% endfor %}
+        </ul>

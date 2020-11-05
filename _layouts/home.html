@@ -3,29 +3,29 @@ layout: default
 ---
 
 <!-- ABOUT ME SECTION -->
-<div class="card mb-3 mx-auto border-white mb-3" style="max-width: 100%;">
+<div class="card mx-auto border-white" style="max-width: 100%;">
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src="{{ site.profile_image }}" class="img-thumbnail rounded float-left" alt="...">
+      {% if site.animate %}
+        <img src="{{ site.profile_image }}" class="img-thumbnail float-left animate__animated animate__fadeInLeft" alt="...">
+      {% else %}
+        <img src="{{ site.profile_image }}" class="img-thumbnail float-left" alt="...">
+      {% endif %}
     </div>
+    <!-- EDUCATION SECTION -->
     <div class="col-md-8">
-      <div class="card-body">
+      {% if site.animate %}
+      <div class="card-body animate__animated animate__fadeInRight">
+      {% else %}
+      <div class="card-body" style:"max-height: 40px;">
+      {% endif %}
         <h5 class="card-title">{{ page.title }}</h5>
         <p class="card-text">{{ content | markdownify }}</p>
-        <ul class="list-unstyled">
-        {% for entry in site.data.education %}
-          <li class="media">
-            <img src="{{ entry.Icon }}" class="mr-3" alt="...">
-            <div class="media-body">
-              <h5>{{ entry.School }}</h5>
-              <p><i>{{ entry.Program }}</i></p>
-              {% if entry.Degree %}
-                <p>{{ entry.Degree }}</p>
-              {% endif %}
-            </div>
-          </li>
-          {% endfor %}
-        </ul>
+        {% if site.home_option == "education" %}
+          {% include education.html %}
+        {% elsif site.home_option == "timeline" %}
+          {% include timeline.html %}
+        {% endif %}
         <p class="card-text"><small class="text-muted"><i>Last updated {{ page.date }}</i></small></p>
       </div>
     </div>
@@ -52,17 +52,33 @@ layout: default
 
 <!-- HOME HIGHLIGHTS SECTION --> 
 <h5 class="card-title text-center"></h5>
+{% if site.animate %}
+<div class="card mx-auto animate__animated animate__slideInUp animate__delay-1s" style="max-width: 100%;">
+{% else %}
 <div class="card mx-auto" style="max-width: 100%;">
+{% endif %}
+  {% if site.color-scheme=="demo" %}
+  <div class="card-header" style="background-color:{{ site.demo-color }};">
+  {% else %}
   <div class="card-header">
+  {% endif %}
     <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
       {% for section in site.data.sections %}
         {% if section.first %}
           <li class="nav-item">
+            {% if site.color-scheme=="demo" %}
             <a class="nav-link active" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}}" aria-selected="true">{{section.name}}</a>
+            {% else %}
+            <a class="nav-link active" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}}" aria-selected="true">{{section.name}}</a>
+            {% endif %}
           </li>
         {% else %}
           <li class="nav-item">
-            <a class="nav-link"  href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="false">{{section.name}}</a>
+              {% if site.color-scheme=="demo" %}
+              <a class="nav-link text-light"  href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="false">{{section.name}}</a>
+              {% else %}
+              <a class="nav-link"  href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="false">{{section.name}}</a>
+              {% endif %}
           </li>
         {% endif %}
       {% endfor %}
@@ -74,7 +90,7 @@ layout: default
           {% if section.first %}
             {% if section.name == "Publications" %}
               <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
-                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="r-link link text-underlined">{{section.description}}</a></h5>
+                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
                 <p class="card-text">{% bibliography -f papers %}</p>
               </div>
             {% else %}
@@ -85,12 +101,12 @@ layout: default
           {% else %}  
             {% if section.name == "Presentations" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="r-link link text-underlined">{{section.description}}</a></h5>
+                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
                 <p class="card-text">{% bibliography -f presentations %}</p>              
               </div>
             {% elsif section.name == "Projects" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="r-link link text-underlined">{{section.description}}</a></h5>
+                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
                 <div class="row row-cols-1 row-cols-md-2 ">
                   {% for projects in site.data.projects %}
                     <div class="col mb-4">
@@ -107,7 +123,7 @@ layout: default
               </div>
             {% elsif section.name == "Teaching" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="r-link link text-underlined">{{section.description}}</a></h5>
+                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
                 {% for courses in site.data.courses %}
                   <div class="accordion" id="accordionExample">
                     <div class="card">
@@ -129,29 +145,17 @@ layout: default
               </div>
             {% elsif section.name == "Coursework" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="r-link link text-underlined">{{section.description}}</a></h5>
+                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
+                <div class="list-group">
                 {% for courses in site.data.courses %}
-                  <div class="accordion" id="accordionExample">
-                    <div class="card">
-                      <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                            {{ courses.Course }}
-                          </button>
-                        </h2>
-                      </div>
-                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
-                          {{ courses.description }}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                  <button type="button" class="list-group-item list-group-item-action">{{ courses.Course }}</button>
                 {% endfor %}
+                </div>
+
               </div>
             {% else %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="r-link link text-underlined">{{section.description}}</a></h5>
+                <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
                 <p class="card-text">{{ section.content }} </p>              
               </div>
             {% endif %}
@@ -181,3 +185,7 @@ layout: default
     });
 </script>
 
+
+<script>
+$('body').scrollspy({ target: '#list-example' })
+</script>
