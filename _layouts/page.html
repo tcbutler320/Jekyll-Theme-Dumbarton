@@ -3,10 +3,10 @@ layout: default
 ---
 
 {% if page.header-img %}
-  <div class="card mb-3">
+  <div class="card mb-3 border-light">
     <img class="card-img-top rounded-lg" src="{{ page.header-img }}" alt="Card image cap">
       <div class="card-body">
-        <h5 class="card-title">{{ page.title }}</h5>
+        <h2 class="card-title">{{ page.title }}</h2>
         <p class="card-text">
             {{ content }}
         </p>
@@ -16,9 +16,11 @@ layout: default
     </div>
   </div>
 {% else %}
-<div class="card mb-3">
+<div class="card mb-3 border-light">
     <div class="card-body">
-      <h5 class="card-title">{{ page.title }}</h5>
+      <h2 class="card-title">{{ page.title }}</h2>
+      <p class="tex-muted"><i>{{ page.description }}</i></p>
+
       <p class="card-text">
           {{ content }}
       </p>

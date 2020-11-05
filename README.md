@@ -2,7 +2,6 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![Netlify Status](https://api.netlify.com/api/v1/badges/24a6b9c4-6586-4e8d-8540-92942a0c47e8/deploy-status)](https://app.netlify.com/sites/admiring-bassi-e955ad/deploys)
 ![](https://img.shields.io/badge/Bootstrap-v4.5.3-blue)  
@@ -36,6 +35,7 @@
 - [Academic Options](#academic-options)
   - [Jekyll Scholar](#jekyll-scholar)
 - [Theme Options](#theme-options)
+    - [Demo Theme](#demo-theme)
 - [Blog Settings](#blog-settings)
   - [Blog Page Settings](#blog-page-settings)
   - [Favicon](#favicon)
@@ -73,10 +73,6 @@ bundle exec jekyll serve
 
 ## Development Roadmap 
 
-
-+ [x] Jekyll Scholar publication formatting
-+ [ ] Include more [Awesome Jekyll Plug ins](https://github.com/planetjekyll/awesome-jekyll-plugins)
-+ [ ] Create custom CSS for jekyll-scholar formatting
 + [ ] Add [Jekyll-Admin](https://github.com/jekyll/jekyll-admin) for CMS 
 
 ## Style 
@@ -93,6 +89,10 @@ bundle exec jekyll serve
 
 
 ## Theme Options 
+
+#### Demo Theme 
+
+Style pallet can be found at https://colorhunt.co/palette/144191
 
 ## Blog Settings 
 
@@ -128,6 +128,7 @@ Sample images used in the Dumbarton Demo site were found on [unsplash](https://u
 
 *Images*   
 Special thanks to the following indivuals for their images  
++  [Cole Keister](https://unsplash.com/@coleito)
 +  [Peter Secan](https://unsplash.com/@phsecan)  
 +  [Terry Boynton](https://unsplash.com/@terry_boynton)
 +  [Stephen Valentin](https://unsplash.com/@valentinsteph)
