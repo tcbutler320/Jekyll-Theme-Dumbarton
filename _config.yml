@@ -4,7 +4,7 @@
 #-----------------https://tbutler.org----#
 #========================================#
 
-title: Dumbarton Theme 
+title: Dumbarton 
 email: 
 description: A minimalistic jekyll theme for academics
 baseurl:                                       # the subpath of your site, e.g. /blog
@@ -16,7 +16,7 @@ image_alt:                                     # image description
 # -----------SITE SETTINGS---------------#
 #========================================#
 author: John Doe 
-profile_image: /assets/img/avatar/avatar.png
+profile_image: /assets/img/avatar/avatar.jpeg 
 occupation: 
 snippet: 
 twitter: tbutler0x90
@@ -30,17 +30,23 @@ pgp:
 ctftime: 
 phonenumber: 
 
+
 # =======================================#
 # -----------THEME SETTINGS--------------#
 #===================================
-nav-color: transparent                               # options: light, dark, transparent, primary | Change the color of the navbar
+nav-color: demo                                # options: light, dark, transparent, primary, custom | Change the color of the navbar
 footer-color:
+color-scheme: demo
 home-highlights-color:
-google-font: Roboto:wght@300 #Itim #Crimson+Text                            # Choose any Google API Font,see a list here https://fonts.google.com/?
-google-font-name: Roboto #Itim #Crimson Text
+google-font: Rubik:wght@300 #Roboto:wght@300 #Itim #Crimson+Text                            # Choose any Google API Font,see a list here https://fonts.google.com/?
+google-font-name: Rubik #Itim #Crimson Text
 #        My Top choices are [Bitter,Crimson Text] 
 nav-dIcon: "fas fa-caret-down"                 # Change the navbar dropdown (for mobile or small screen sizes) to any fontawesome icon. for a list of icons visit https://fontawesome.com/ 
-animate:                                       # false or true, uses animate.css to animate certain functions
+animate: true                                      # false or true, uses animate.css to animate certain functions
+
+navbar-color: "#e3f2fd"
+
+
 # =======================================#     # These options include popups, modals, and toasts designed to 
 # -------USER INTERACTION SETTINGS-------#     #   make the site more interactive for the user or to highlight
 #========================================#     #   certain sections. Powered by BootStrap 4 

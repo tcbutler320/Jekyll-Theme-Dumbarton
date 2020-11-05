@@ -6,10 +6,10 @@ layout: default
 <div class="card mb-3 mx-auto border-white mb-3" style="max-width: 100%;">
   <div class="row no-gutters">
     <div class="col-md-4">
-      <img src="{{ site.profile_image }}" class="img-thumbnail rounded float-left" alt="...">
+      <img src="{{ site.profile_image }}" class="img-thumbnail float-left animate__animated animate__fadeInLeft" alt="...">
     </div>
     <div class="col-md-8">
-      <div class="card-body">
+      <div class="card-body animate__animated animate__fadeInRight">
         <h5 class="card-title">{{ page.title }}</h5>
         <p class="card-text">{{ content | markdownify }}</p>
         <ul class="list-unstyled">
@@ -52,17 +52,33 @@ layout: default
 
 <!-- HOME HIGHLIGHTS SECTION --> 
 <h5 class="card-title text-center"></h5>
+{% if site.animate %}
+<div class="card mx-auto animate__animated animate__slideInUp animate__delay-1s" style="max-width: 100%;">
+{% else %}
 <div class="card mx-auto" style="max-width: 100%;">
+{% endif %}
+  {% if site.color-scheme=="demo" %}
+  <div class="card-header" style="background-color: #00334e;">
+  {% else %}
   <div class="card-header">
+  {% endif %}
     <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
       {% for section in site.data.sections %}
         {% if section.first %}
           <li class="nav-item">
+            {% if site.color-scheme=="demo" %}
             <a class="nav-link active" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}}" aria-selected="true">{{section.name}}</a>
+            {% else %}
+            <a class="nav-link active" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}}" aria-selected="true">{{section.name}}</a>
+            {% endif %}
           </li>
         {% else %}
           <li class="nav-item">
-            <a class="nav-link"  href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="false">{{section.name}}</a>
+              {% if site.color-scheme=="demo" %}
+              <a class="nav-link text-light"  href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="false">{{section.name}}</a>
+              {% else %}
+              <a class="nav-link"  href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="false">{{section.name}}</a>
+              {% endif %}
           </li>
         {% endif %}
       {% endfor %}

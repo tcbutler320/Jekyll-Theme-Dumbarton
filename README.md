@@ -35,6 +35,7 @@
 - [Academic Options](#academic-options)
   - [Jekyll Scholar](#jekyll-scholar)
 - [Theme Options](#theme-options)
+    - [Demo Theme](#demo-theme)
 - [Blog Settings](#blog-settings)
   - [Blog Page Settings](#blog-page-settings)
   - [Favicon](#favicon)
@@ -89,6 +90,10 @@ bundle exec jekyll serve
 
 ## Theme Options 
 
+#### Demo Theme 
+
+Style pallet can be found at https://colorhunt.co/palette/144191
+
 ## Blog Settings 
 
 ### Blog Page Settings   
@@ -123,6 +128,7 @@ Sample images used in the Dumbarton Demo site were found on [unsplash](https://u
 
 *Images*   
 Special thanks to the following indivuals for their images  
++  [Cole Keister](https://unsplash.com/@coleito)
 +  [Peter Secan](https://unsplash.com/@phsecan)  
 +  [Terry Boynton](https://unsplash.com/@terry_boynton)
 +  [Stephen Valentin](https://unsplash.com/@valentinsteph)

@@ -17,6 +17,7 @@ html {
   }
 
 
+
 /*
 =====
 DEPENDENCIES
@@ -68,7 +69,7 @@ CORE
 .link{
 	--textUnderlinedLineHeight: 100%;
 	--textUnderlinedLineGap: 0;
-	--textUnderlinedLineColor: #fed330;
+	--textUnderlinedLineColor: #5588a3;
 	
 	padding-left: .75rem;
 	padding-right: .75rem;

@@ -5,17 +5,26 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
 {% elsif site.nav-color == "transparent"  %}
 <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
-{% else %}
 {% elsif site.nav-color == "primary"  %}
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+{% elsif site.nav-color == "custom"  %}
+<nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+{% elsif site.nav-color == "demo"  %}
+<nav class="navbar navbar-expand-lg" style="background-color: #00334e;">
+{% elsif site.nav-color == "linear-gradiant"  %}
+<nav class="navbar navbar-expand-lg" style="background-color: #FF9A8B; background-image: linear-gradient(90deg, #FF9A8B 0%, #FF6A88 55%, #FF99AC 100%);">
 {% else %}
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 {% endif %}
   <!-- Optional Icon
   <a href="/index.html"><img src="/assets/img/icons/favicon.ico" class="dumbarton-icon"></a>
   -->
+{% if site.nav-color == "demo"  %}
+  <a class="navbar-brand text-white" href="/index.html" style="font-family:Courgette;">{{ site.title }}</a>
+{% else %}
   <a class="navbar-brand" href="/index.html">{{ site.title }}</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+{% endif %}
+  <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <i class="{{ site.nav-dIcon }}"></i>
   </button>
 
@@ -23,7 +32,7 @@
     <ul class="navbar-nav mr-auto">
         {% for item in site.data.nav.links %}
             <li class="nav-item">
-                <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+                <a href="{{ item.url }}" class="nav-link text-white">{{ item.title }}</a>
             </li>
         {% endfor %}
     </ul>
@@ -34,7 +43,11 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="" aria-label="Search">
+      {% if site.color-scheme == "demo" %}
+      <button class="btn btn-light btn-sm my-2 my-sm-0" type="submit">Search</button>
+      {% else %}
       <button class="btn btn-dark  btn-sm my-2 my-sm-0" type="submit">Search</button>
+      {% endif %}
     </form> 
     
   </div>
