@@ -3,7 +3,7 @@ layout: default
 ---
 
 <!-- ABOUT ME SECTION -->
-<div class="card mb-3 mx-auto border-white mb-3" style="max-width: 100%;">
+<div class="card mx-auto border-white" style="max-width: 100%;">
   <div class="row no-gutters">
     <div class="col-md-4">
       {% if site.animate %}
@@ -12,29 +12,20 @@ layout: default
         <img src="{{ site.profile_image }}" class="img-thumbnail float-left" alt="...">
       {% endif %}
     </div>
+    <!-- EDUCATION SECTION -->
     <div class="col-md-8">
       {% if site.animate %}
       <div class="card-body animate__animated animate__fadeInRight">
       {% else %}
-      <div class="card-body">
+      <div class="card-body" style:"max-height: 40px;">
       {% endif %}
         <h5 class="card-title">{{ page.title }}</h5>
         <p class="card-text">{{ content | markdownify }}</p>
-        <h5 class="card-title">Education</h5>
-        <ul class="list-unstyled">
-        {% for entry in site.data.education %}
-          <li class="media">
-            <img src="{{ entry.Icon }}" class="mr-3" alt="...">
-            <div class="media-body">
-              <h5>{{ entry.School }}</h5>
-              <p><i>{{ entry.Program }}</i></p>
-              {% if entry.Degree %}
-                <p>{{ entry.Degree }}</p>
-              {% endif %}
-            </div>
-          </li>
-          {% endfor %}
-        </ul>
+        {% if site.home_option == "education" %}
+          {% include education.html %}
+        {% elsif site.home_option == "timeline" %}
+          {% include timeline.html %}
+        {% endif %}
         <p class="card-text"><small class="text-muted"><i>Last updated {{ page.date }}</i></small></p>
       </div>
     </div>
@@ -194,3 +185,7 @@ layout: default
     });
 </script>
 
+
+<script>
+$('body').scrollspy({ target: '#list-example' })
+</script>

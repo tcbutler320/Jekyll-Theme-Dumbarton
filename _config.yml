@@ -47,6 +47,10 @@ animate: true                                      # false or true, uses animate
 navbar-color: "#00334e"
 demo-color: "#00334e"
 
+# =======================================#
+# -----------HOME PAGE  SETTINGS --------#
+#========================================#
+home_option: timeline                          # options: education, skills, timeline
 
 # =======================================#     # These options include popups, modals, and toasts designed to 
 # -------USER INTERACTION SETTINGS-------#     #   make the site more interactive for the user or to highlight
