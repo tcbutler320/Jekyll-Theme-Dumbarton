@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-2
 title:  "Dumbarton Style Guide"
 description: "The Only Useful Post Here"
 type: card-dated

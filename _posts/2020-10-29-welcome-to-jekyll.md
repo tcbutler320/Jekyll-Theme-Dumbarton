@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-2
 title:  "Welcome to Jekyll!"
 description: "A Preset Post from Jekyll"
 type: card-dated

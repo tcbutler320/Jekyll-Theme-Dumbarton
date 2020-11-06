@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post-2
 title:  "Lorem Ipsum"
 description: "A Description"
 date:   2020-10-26 20:01:21 -0400
