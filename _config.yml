@@ -32,6 +32,12 @@ phonenumber:
 
 tags:  post jekyll styleguide ipsum
 
+gittalk_client_id: 309bf7a670f204bd2a3e                    
+gittalk_client_secret: fe36864560ece7cfc716e6359238040df5b55d3a
+gittalk_repo: https://github.com/tcbutler320/Jekyll-Theme-Dumbarton
+gittalk_owner: tcbutler320
+gittalk_admin: tcbutler320
+gittalk_distraction_mode: false
 # =======================================#
 # -----------THEME SETTINGS--------------#
 #========================================#
