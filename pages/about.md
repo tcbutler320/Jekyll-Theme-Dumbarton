@@ -12,6 +12,33 @@ last-updated: 2020-10-30 5:55 PM
 
 <canvas id="myChart"></canvas>
 
+<canvas id="myBarChart" height="50"></canvas>
+
+
+<script>
+var ctx = document.getElementById('myBarChart').getContext('2d');
+var myBarChart = new Chart(ctx, {
+    type: 'horizontalBar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: 'My Skills',
+            data: [12, 19, 3, 5, 2, 3],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+
 <script>
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {

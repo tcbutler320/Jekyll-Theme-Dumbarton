@@ -1,13 +1,24 @@
 - School: Harvard
   Degree: 
-  Program: Graduate School of Arts & Sciences
+  Program: POL 240/SPI 312 International Relations
+  id: POL-240/SPI-312-International-Relations
+  data-id: data-harv1
+  heading-id: head-harv1
   Start Date: 
   End Date: 
-  Icon: /assets/img/icons/2x/harvard-crop.png        # Make this icon small, think 30px/30px
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   Icon: /assets/img/icons/2x/harvard-crop.png        # Make this icon small, think 30px/30px
 
 - School: Princeton
   Degree: 
-  Program: School of Public and International Affairs
+  Program: POL 380 Human Rights
+  id: POL-380-Human-Rights
+  data-id: data-princ1   
+  heading-id: head-princ1  # This can be any random string as long as each teaching set has a unique one. 
   Start Date: 
   End Date: 
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
   Icon: /assets/img/icons/2x/princeton-crop.png      # Make this icon small, think 30px/30px
