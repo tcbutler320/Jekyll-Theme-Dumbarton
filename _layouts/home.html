@@ -3,11 +3,11 @@ layout: default
 ---
 
 <!-- ABOUT ME SECTION -->
-<div class="card mx-auto border-white" style="max-width: 100%;">
+<div class="card mx-auto border-light">
   <div class="row no-gutters">
     <div class="col-md-4">
       {% if site.animate %}
-        <img src="{{ site.profile_image }}" class="img-thumbnail float-left animate__animated animate__fadeInLeft" alt="...">
+        <img src="{{ site.profile_image }}" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" alt="...">
       {% else %}
         <img src="{{ site.profile_image }}" class="img-thumbnail float-left" alt="...">
       {% endif %}
@@ -15,9 +15,9 @@ layout: default
     <!-- EDUCATION SECTION -->
     <div class="col-md-8">
       {% if site.animate %}
-      <div class="card-body animate__animated animate__fadeInRight">
+      <div class="card-body animate__animated animate__fadeInRight" style:"height: .5rem;">
       {% else %}
-      <div class="card-body" style:"max-height: 40px;">
+      <div class="card-body">
       {% endif %}
         <h5 class="card-title">{{ page.title }}</h5>
         <p class="card-text">{{ content | markdownify }}</p>
@@ -51,7 +51,7 @@ layout: default
 -->
 
 <!-- HOME HIGHLIGHTS SECTION --> 
-<h5 class="card-title text-center"></h5>
+<h5 class="card-title text-center mb-3"></h5>
 {% if site.animate %}
 <div class="card mx-auto animate__animated animate__slideInUp animate__delay-1s" style="max-width: 100%;">
 {% else %}
