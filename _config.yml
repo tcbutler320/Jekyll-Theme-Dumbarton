@@ -60,6 +60,12 @@ home_modal: false
 home_toasts: false
 home_popup: false
 
+# =======================================#    # These  settings are for demo purposes only, things like 
+# -----------HELP SETTINGS---------------#    #     popup toasts and tooltips designed to help new 
+#========================================#    #     developers as they look into using this theme      
+help_tips: true                               # options: true, false  | use false to disable these for production mode
+
+
 # =======================================#
 # -----------BUILD SETTINGS--------------#
 #========================================#
