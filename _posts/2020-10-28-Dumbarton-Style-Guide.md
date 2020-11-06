@@ -1,14 +1,15 @@
 ---
-layout: post
+layout: post-2
 title:  "Dumbarton Style Guide"
 description: "The Only Useful Post Here"
 type: card-dated
 date:   2020-10-28 20:01:21 -0400
 categories: Dumabrton style
-image: /assets/img/posts/blog-paris2.jpg
+image: http://placehold.it/750X300?text=Header+Image # for local images, place in /assets/img/posts/
 caption:
 last-updated: 2020-10-26 20:01:21 -0400
 categories: post
+tag: styleguide
 author: Tyler Butler
 ---
 

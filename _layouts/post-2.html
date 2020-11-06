@@ -1,38 +1,30 @@
 ---
 layout: page
-permalink: /blog.html
-title: Blog
-description: I write about cyber threat intelligence
-header-img:  
-last-updated: 2020-10-30 5:55 PM
 ---
+
 
     <!-- Page Content -->
     <div class="container">
 
       <div class="row">
+
         <!-- Blog Entries Column -->
-        <div class="col-md-8">
-          <h1 class="my-4" style="font-family:Courgette;">{{ page.title }}</h1>
+        <div class="col-md-8">          
           <!-- Blog Post -->
-          {% for post in site.posts %}
             <div class="card mb-4">
               <img class="card-img-top" src="http://placehold.it/750x300" alt="Card image cap">
               <div class="card-body">
-                <h2 class="card-title">{{ post.title }}</h2>
-                <p class="card-text">{{ post.description }}</p>
-                {% if site.nav-color == "demo"  %}
-                <a href="{{ post.url }}" class="btn btn-primary text-white" style="background-color:#00334e">Read Article &rarr;</a>
-                {% else %}
-                <a href="{{ post.url }}" class="btn btn-primary">Read Article &rarr;</a>
+                <h1 class="card-title" style="font-family:Courgette;">{{ page.title }}</h1>
+                {% if page.author %}
+                <p><i>Written By: {{ page.author }}</i></p>
                 {% endif %}
+                <p class="card-text">{{ content | markdownify }}</p>
+                <div id="gitalk-container"></div>
               </div>
               <div class="card-footer text-muted">
-                Posted on {{ post.date }} by
-                <a href="#">{{ post.author }}</a>
+                Posted on {{ page.date }} 
               </div>
             </div>
-          {% endfor %}
 
           <!-- Pagination -->
           <ul class="pagination justify-content-center mb-4">
@@ -45,8 +37,10 @@ last-updated: 2020-10-30 5:55 PM
           </ul>
 
         </div>
+
         <!-- Sidebar Widgets Column -->
         <div class="col-md-4">
+
           <!-- Search Widget -->
           <div class="card my-4">
             <h5 class="card-header">Search</h5>
@@ -109,8 +103,23 @@ last-updated: 2020-10-30 5:55 PM
               <p> You can make this into anything you want  </p>
             </div>
           </div>
-
       </div>
       <!-- /.row -->
+
     </div>
     <!-- /.container -->
+
+
+<script> 
+const gitalk = new Gitalk({
+  clientID: '{{ site.gittalk_client_id }}',
+  clientSecret: '{{ site.gittalk_client_secret }}',
+  repo: '{{ site.gittalk_repo }}',      // The repository of store comments,
+  owner: '{{ site.gittalk_owner }}',
+  admin: ['{{sitte.gittalk_admin }}'],
+  id: location.pathname,      // Ensure uniqueness and length less than 50
+  distractionFreeMode: '{{ site.gittalk_distraction_mode }}'  // Facebook-like distraction free mode
+})
+
+gitalk.render('gitalk-container')
+</script>

@@ -16,7 +16,7 @@ image_alt:                                     # image description
 # -----------SITE SETTINGS---------------#
 #========================================#
 author: John Doe 
-profile_image: /assets/img/avatar/avatar.jpeg 
+profile_image:  http://placehold.it/500x700?text=Insert+Profile+Picture+Here #/assets/img/avatar/avatar.jpeg 
 occupation: 
 snippet: 
 twitter: tbutler0x90
@@ -30,7 +30,14 @@ pgp:
 ctftime: 
 phonenumber: 
 
+tags:  post jekyll styleguide ipsum
 
+gittalk_client_id: 309bf7a670f204bd2a3e                    
+gittalk_client_secret: fe36864560ece7cfc716e6359238040df5b55d3a
+gittalk_repo: https://github.com/tcbutler320/Jekyll-Theme-Dumbarton
+gittalk_owner: tcbutler320
+gittalk_admin: tcbutler320
+gittalk_distraction_mode: false
 # =======================================#
 # -----------THEME SETTINGS--------------#
 #========================================#
@@ -97,8 +104,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - docs
-  - /docs/
 
 # =======================================#
 # -----JEKYLL SCHOLAR SETTINGS-----------#
