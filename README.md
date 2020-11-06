@@ -125,6 +125,12 @@ Sample images used in the Dumbarton Demo site were found on [unsplash](https://u
 
 
 ## Thanks 
+I borrowed concepts and assets from various other open source projects. A special thanks for everyone who contributed to Jekyll-Theme-Dumbarton. 
+
+*Code* 
++ [Masresha](https://codepen.io/masresha)
+  + [Decision Making App](https://codepen.io/masresha/pen/KyLrbK): Used as a concept for the blog layout
+
 
 *Images*   
 Special thanks to the following indivuals for their images  

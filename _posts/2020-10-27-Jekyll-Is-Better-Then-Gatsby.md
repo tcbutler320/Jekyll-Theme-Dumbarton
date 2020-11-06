@@ -5,10 +5,11 @@ description: "I'll Tell You Why"
 date:   2020-10-27 20:01:21 -0400
 type: card-dated
 categories: Jekyll Gatsby
-image: 
+image:  # for local images, place in /assets/img/posts/
 caption:
 last-updated: 2020-10-26 20:01:21 -0400
 categories: post
+tag: post
 author: Tyler Butler
 ---
 

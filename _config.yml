@@ -16,7 +16,7 @@ image_alt:                                     # image description
 # -----------SITE SETTINGS---------------#
 #========================================#
 author: John Doe 
-profile_image: /assets/img/avatar/avatar.jpeg 
+profile_image:  http://placehold.it/500x700?text=Insert+Profile+Picture+Here #/assets/img/avatar/avatar.jpeg 
 occupation: 
 snippet: 
 twitter: tbutler0x90
@@ -30,6 +30,7 @@ pgp:
 ctftime: 
 phonenumber: 
 
+tags:  post jekyll styleguide ipsum
 
 # =======================================#
 # -----------THEME SETTINGS--------------#
@@ -97,8 +98,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-  - docs
-  - /docs/
 
 # =======================================#
 # -----JEKYLL SCHOLAR SETTINGS-----------#

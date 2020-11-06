@@ -6,7 +6,6 @@ layout: default
   <div class="card mb-3 border-light">
     <img class="card-img-top rounded-lg" src="{{ page.header-img }}" alt="Card image cap">
       <div class="card-body">
-        <h2 class="card-title">{{ page.title }}</h2>
         <p class="card-text">
             {{ content }}
         </p>
@@ -18,9 +17,6 @@ layout: default
 {% else %}
 <div class="card mb-3 border-light">
     <div class="card-body">
-      <h2 class="card-title">{{ page.title }}</h2>
-      <p class="tex-muted"><i>{{ page.description }}</i></p>
-
       <p class="card-text">
           {{ content }}
       </p>
