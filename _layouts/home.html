@@ -25,6 +25,8 @@ layout: default
           {% include education.html %}
         {% elsif site.home_option == "timeline" %}
           {% include timeline.html %}
+        {% elsif site.home_option =="skills" %}
+        <canvas id="myBarChart" height="50"></canvas>
         {% endif %}
         <p class="card-text"><small class="text-muted"><i>Last updated {{ page.date }}</i></small></p>
       </div>
@@ -124,24 +126,24 @@ layout: default
             {% elsif section.name == "Teaching" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
                 <h5 class="card-title text-center"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
-                {% for courses in site.data.courses %}
                   <div class="accordion" id="accordionExample">
+                    {% for courses in site.data.courses %}
                     <div class="card">
-                      <div class="card-header" id="headingOne">
+                      <div class="card-header" id="{{ courses.heading-id }}">
                         <h2 class="mb-0">
-                          <button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#{{ courses.data-id }}" aria-expanded="true" aria-controls="{{ courses.data-id }}">
                             {{ courses.Course }}
                           </button>
                         </h2>
                       </div>
-                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
-                        <div class="card-body">
-                          {{ courses.description }}
-                        </div>
+                    </div>
+                    <div id="{{ courses.data-id }}" class="collapse show" aria-labelledby="{{ courses.heading-id }}" data-parent="#accordionExample">
+                      <div class="card-body">
+                        {{ courses.description }}
                       </div>
                     </div>
+                  {% endfor %}
                   </div>
-                {% endfor %}
               </div>
             {% elsif section.name == "Coursework" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
@@ -188,4 +190,29 @@ layout: default
 
 <script>
 $('body').scrollspy({ target: '#list-example' })
+</script>
+
+
+<script>
+var ctx = document.getElementById('myBarChart').getContext('2d');
+var myBarChart = new Chart(ctx, {
+    type: 'horizontalBar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: 'My Skills',
+            data: [12, 19, 3, 5, 2, 3],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
 </script>
