@@ -33,9 +33,9 @@ phonenumber:
 
 # =======================================#
 # -----------THEME SETTINGS--------------#
-#===================================
+#========================================#
 nav-color: demo                                # options: light, dark, transparent, primary, custom | Change the color of the navbar
-footer-color:
+footer-color: demo
 color-scheme: demo                              # options: demo | changes color scheme based on preset values 
 home-highlights-color:
 google-font: Roboto #Roboto:wght@300 #Itim #Crimson+Text                            # Choose any Google API Font,see a list here https://fonts.google.com/?
@@ -50,7 +50,7 @@ demo-color: "#00334e"
 # =======================================#
 # -----------HOME PAGE  SETTINGS --------#
 #========================================#
-home_option: timeline                          # options: education, skills, timeline
+home_option: education                          # options: education, skills, timeline
 
 # =======================================#     # These options include popups, modals, and toasts designed to 
 # -------USER INTERACTION SETTINGS-------#     #   make the site more interactive for the user or to highlight
