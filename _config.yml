@@ -4,6 +4,10 @@
 #-----------------https://tbutler.org----#
 #========================================#
 
+# =======================================#
+# -----------BASE SETTINGS---------------#
+#========================================#
+
 title: Dumbarton 
 email: 
 description: a minimalistic jekyll theme for academics
@@ -30,13 +34,19 @@ pgp:
 ctftime: 
 phonenumber: 
 
+# =======================================#
+# -----------BLOG SETTINGS---------------#
+#========================================#
+
 tags:  post jekyll styleguide ipsum
 
-gittalk_client_id: 309bf7a670f204bd2a3e                    
+comments: false                                    # Used to enable comments on blog posts
+gittalk_client_id: 309bf7a670f204bd2a3e            
 gittalk_repo: Jekyll-Theme-Dumbarton
 gittalk_owner: tcbutler320
 gittalk_admin: tcbutler320
 gittalk_distraction_mode: false
+
 # =======================================#
 # -----------THEME SETTINGS--------------#
 #========================================#
