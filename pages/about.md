@@ -6,69 +6,8 @@ description: Get to know what I'm up too
 header-img: 
 last-updated: 2020-10-30 5:55 PM
 ---
-<dialog open>
-  <p>CSSSCRIPT.COM</p>
-</dialog>
 
-#### Making Charts with Chart.js  
-
-<canvas id="myChart"></canvas>
-
-<canvas id="myBarChart" height="50"></canvas>
-
-
-<script>
-var ctx = document.getElementById('myBarChart').getContext('2d');
-var myBarChart = new Chart(ctx, {
-    type: 'horizontalBar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: 'My Skills',
-            data: [12, 19, 3, 5, 2, 3],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-</script>
-
-<script>
-var ctx = document.getElementById('myChart').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'line',
-
-    // The data for our dataset
-    data: {
-        labels: ['A', 'B', 'C'],
-        datasets: [
-        {
-            data: [10, 20, 30],
-            backgroundColor: '#af90ca',
-            label: 'Before'
-        },
-        {
-            data: [50, 30, 40],
-            backgroundColor: '#c46998',
-            label: 'After'
-        }
-        ]
-    },
-
-    // Configuration options go here
-    options: {}
-});
-</script>
-
+<h1 class="mx-auto" style="font-family:Courgette;">{{ page.title }}</h1>
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Libero id faucibus nisl tincidunt eget. Cursus metus aliquam eleifend mi in nulla posuere sollicitudin. Duis convallis convallis tellus id interdum velit. Ultricies mi eget mauris pharetra et. Odio pellentesque diam volutpat commodo sed egestas. Eu mi bibendum neque egestas congue quisque. Augue lacus viverra vitae congue eu consequat ac felis donec. Ultrices vitae auctor eu augue ut lectus arcu. Eu consequat ac felis donec et. Sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper eget.
 

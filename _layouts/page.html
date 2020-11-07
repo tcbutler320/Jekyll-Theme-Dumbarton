@@ -1,30 +1,36 @@
----
-layout: default
----
-
-{% if page.header-img %}
-  <div class="card mb-3 border-light">
-    <img class="card-img-top rounded-lg" src="{{ page.header-img }}" alt="Card image cap">
-      <div class="card-body">
-        <p class="card-text">
-            {{ content }}
-        </p>
-        {% if page.last-updated %}
-          <p class="card-text"><small class="text-muted">Last updated {{ page.last-updated }}</small></p>
-        {% endif %}
-    </div>
-  </div>
-{% else %}
-<div class="card mb-3 border-light">
-    <div class="card-body">
-      <p class="card-text">
-          {{ content }}
-      </p>
-      {% if page.last-updated %}
-        <p class="card-text"><small class="text-muted">Last updated {{ page.last-updated }}</small></p>
+<!DOCTYPE html>
+<html>
+  {% include head-blog.html %}
+  <body>
+    {% include nav.html %}
+    <div class="dumbarton-spacer-sm"></div>
+    <div class="container">
+      {% if page.header-img %}
+      <div class="card mb-3 border-light">
+        <img class="card-img-top rounded-lg" src="{{ page.header-img }}" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">
+                {{ content }}
+            </p>
+            {% if page.last-updated %}
+              <p class="card-text"><small class="text-muted">Last updated {{ page.last-updated }}</small></p>
+            {% endif %}
+        </div>
+      </div>
+      {% else %}
+      <div class="card mb-3 border-light">
+          <div class="card-body">
+            <p class="card-text">
+                {{ content }}
+            </p>
+            {% if page.last-updated %}
+              <p class="card-text"><small class="text-muted">Last updated {{ page.last-updated }}</small></p>
+            {% endif %}
+        </div>
+      </div>
       {% endif %}
-  </div>
-</div>
-{% endif %}
-
-
+    </div>
+    <div class="dumbarton-spacer"></div>
+    {% include footer.html %}
+  </body>
+</html>

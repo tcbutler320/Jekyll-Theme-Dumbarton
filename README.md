@@ -1,6 +1,5 @@
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![Netlify Status](https://api.netlify.com/api/v1/badges/24a6b9c4-6586-4e8d-8540-92942a0c47e8/deploy-status)](https://app.netlify.com/sites/admiring-bassi-e955ad/deploys)
@@ -24,24 +23,46 @@
 </p>
 
 ![](screenshot.png)  
-![](screenshot2.png)
 
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
+- [About](#about)
 - [Installation](#installation)
-- [Development Roadmap](#development-roadmap)
+- [Setting Options](#setting-options)
+  - [Base  Settings](#base-settings)
+  - [Site Settings](#site-settings)
+  - [Blog Settings](#blog-settings)
 - [Style](#style)
 - [Academic Options](#academic-options)
   - [Jekyll Scholar](#jekyll-scholar)
 - [Theme Options](#theme-options)
     - [Demo Theme](#demo-theme)
-- [Blog Settings](#blog-settings)
+- [Blog Settings](#blog-settings-1)
   - [Blog Page Settings](#blog-page-settings)
   - [Favicon](#favicon)
   - [Meta Data](#meta-data)
   - [Media](#media)
 - [Thanks](#thanks)
+
+## About 
+Jekyll-Theme-Dumbarton is a jekyll theme designed for academics. This theme is different from other academic themes in that it incorporates enough features to fully represent your full body of work, but still maintains a simplistic minimal weight. 
+
+**Main Features** 
+
+*Home Page Highlights*
+  - [x] Publications 
+    - Automatic bibliography formatting with jekyll-scholar 
+  - [x] Coursework
+  - [x] Teaching 
+  - [x] Projects
+
+*Blog*
+  - [x] Wordpress-Styled Blog Page 
+    - Sidebar Widgets
+    - Embedded Twitter Timeline 
+
+
 
 ## Installation   
 
@@ -50,13 +71,13 @@ Follow the following instructions to install the Dumbarton theme
 1) Download the source code 
 
 ```bash
-git clone https://github.com/tcbutler320/dumbarton.git
+git clone https://github.com/tcbutler320/Jekyll-Theme-Dumbarton.git
 ```
 
 2) cd into the folder 
 
 ```bash
-cd dumbarton
+cd Jekyll-Theme-Dumbarton
 ```
 
 3) Use bundler to install dependancies
@@ -71,9 +92,29 @@ bundle install
 bundle exec jekyll serve
 ```
 
-## Development Roadmap 
+## Setting Options  
+There are many settings available to users to change how the theme looks. These settings can be changed in `_config.yml`. It's important to note that unlike previewing changes in other areas of the site, you must stop and restart the development server in order to see changes made in the config file.  
 
-+ [ ] Add [Jekyll-Admin](https://github.com/jekyll/jekyll-admin) for CMS 
+### Base  Settings 
+
+| _config.yml  	| Description  	| Options  	|
+|---	|---	|---	|
+| `image`  	| Used in metatag as sites link preview  	|  https://example.com or /assets/path/to/image.png 	|
+
+### Site Settings 
+
+| _config.yml  	| Description  	| Options  	|
+|---	|---	|---	|
+| `profile_image`  	|  Used on home page as authors profile image 	|  https://example.com or /assets/path/to/image.png  	|
+| social links, ex `twitter`  	|  Used to generate links in the nav and footer 	|  ex `twitter: tbutler0x90` 	|
+
+### Blog Settings 
+
+| _config.yml  	| Description  	| Options  	|
+|---	|---	|---	|
+| `tags`  	|  Used to generate tags widget on blogs page, seperated by spaces  	| ex `tags:  post jekyll`  	|
+| `comments`   | Enable comments on blog posts using gitalk. **Not Currently Working**    |  `comments: false`   |
+
 
 ## Style 
 
