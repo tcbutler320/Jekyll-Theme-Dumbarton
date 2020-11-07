@@ -33,7 +33,6 @@
   - [Base  Settings](#base-settings)
   - [Site Settings](#site-settings)
   - [Blog Settings](#blog-settings)
-- [Development Roadmap](#development-roadmap)
 - [Style](#style)
 - [Academic Options](#academic-options)
   - [Jekyll Scholar](#jekyll-scholar)
@@ -114,11 +113,8 @@ There are many settings available to users to change how the theme looks. These 
 | _config.yml  	| Description  	| Options  	|
 |---	|---	|---	|
 | `tags`  	|  Used to generate tags widget on blogs page, seperated by spaces  	| ex `tags:  post jekyll`  	|
+| `comments`   | Enable comments on blog posts using gitalk. **Not Currently Working**    |  `comments: false`   |
 
-
-## Development Roadmap 
-
-+ [ ] Add [Jekyll-Admin](https://github.com/jekyll/jekyll-admin) for CMS 
 
 ## Style 
 

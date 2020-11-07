@@ -734,3 +734,64 @@ Links using markdown are normal and styled like this ...
 But if you use the right class, it can look like this...  
 
 <a href="https://codepen.io/melnik909/pen/KGxdjY" class="highlighted">read more</a>
+
+
+
+#### Making Charts with Chart.js  
+
+<canvas id="myChart"></canvas>
+
+<canvas id="myBarChart" height="50"></canvas>
+
+
+<script>
+var ctx = document.getElementById('myBarChart').getContext('2d');
+var myBarChart = new Chart(ctx, {
+    type: 'horizontalBar',
+    data: {
+        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+        datasets: [{
+            label: 'My Skills',
+            data: [12, 19, 3, 5, 2, 3],
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true
+                }
+            }]
+        }
+    }
+});
+</script>
+
+<script>
+var ctx = document.getElementById('myChart').getContext('2d');
+var chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'line',
+
+    // The data for our dataset
+    data: {
+        labels: ['A', 'B', 'C'],
+        datasets: [
+        {
+            data: [10, 20, 30],
+            backgroundColor: '#af90ca',
+            label: 'Before'
+        },
+        {
+            data: [50, 30, 40],
+            backgroundColor: '#c46998',
+            label: 'After'
+        }
+        ]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+</script>

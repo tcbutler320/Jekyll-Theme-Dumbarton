@@ -41,15 +41,18 @@ phonenumber:
 tags:  post jekyll styleguide ipsum
 
 comments: false                                    # Used to enable comments on blog posts
-gittalk_client_id: 309bf7a670f204bd2a3e            
-gittalk_repo: Jekyll-Theme-Dumbarton
-gittalk_owner: tcbutler320
-gittalk_admin: tcbutler320
-gittalk_distraction_mode: false
+gitalk_client_id: 309bf7a670f204bd2a3e            
+gitalk_client_secret:    
+gitalk_repo: Jekyll-Theme-Dumbarton
+gitalk_owner: tcbutler320
+gitalk_admin: tcbutler320
+gitalk_distraction_mode: false
 
 # =======================================#
 # -----------THEME SETTINGS--------------#
 #========================================#
+
+scheme: demo 
 nav-color: demo                                # options: light, dark, transparent, primary, custom | Change the color of the navbar
 footer-color: demo
 color-scheme: demo                              # options: demo | changes color scheme based on preset values 
