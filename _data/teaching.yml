@@ -9,7 +9,6 @@
   first: true   # one must be true to properly display
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   Icon: /assets/img/icons/2x/harvard-crop.png        # Make this icon small, think 30px/30px
 
 - School: Princeton
   Degree: 
@@ -20,7 +19,6 @@
   Start Date: 
   End Date: 
   first: false
+  Icon: /assets/img/icons/2x/princeton-crop.png      # Make this icon small, think 30px/30px
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-  Icon: /assets/img/icons/2x/princeton-crop.png      # Make this icon small, think 30px/30px
