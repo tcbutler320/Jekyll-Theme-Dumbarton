@@ -19,7 +19,7 @@ layout: page
                 <p><i>Written By: {{ page.author }}</i></p>
                 {% endif %}
                 <p class="card-text">{{ content | markdownify }}</p>
-                <div id="gitalk-container"></div>
+                <!--div id="gitalk-container"></!--div> -->
               </div>
               <div class="card-footer text-muted">
                 Posted on {{ page.date }} 
@@ -109,17 +109,15 @@ layout: page
     </div>
     <!-- /.container -->
 
-
+<!--
 <script> 
 const gitalk = new Gitalk({
-  clientID: '{{ site.gittalk_client_id }}',
-  clientSecret: '{{ site.gittalk_client_secret }}',
-  repo: '{{ site.gittalk_repo }}',      // The repository of store comments,
-  owner: '{{ site.gittalk_owner }}',
-  admin: ['{{sitte.gittalk_admin }}'],
-  id: '{{ page.url }}',      // Ensure uniqueness and length less than 50
-  distractionFreeMode: '{{ site.gittalk_distraction_mode }}'  // Facebook-like distraction free mode
+  clientID: 'ad19baca858bfbd5',
+  clientSecret: 'b4019e60394699c23a3733d5c8ec53c4b02576eb',
+  repo: 'Jekyll-Theme-Dumbarton-Comments',
+  owner: 'tcbutler320',
+  admin: 'tcbutler320',
+  id: 'page-aside' // Facebook-like distraction free mode
 })
-
 gitalk.render('gitalk-container')
-</script>
+</script> -->

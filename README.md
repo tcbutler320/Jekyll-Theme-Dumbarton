@@ -29,6 +29,7 @@
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
+- [About](#about)
 - [Installation](#installation)
 - [Development Roadmap](#development-roadmap)
 - [Style](#style)
@@ -42,6 +43,25 @@
   - [Meta Data](#meta-data)
   - [Media](#media)
 - [Thanks](#thanks)
+
+## About 
+Jekyll-Theme-Dumbarton is a jekyll theme designed for academics. This theme is different from other academic themes in that it incorporates enough features to fully represent your full body of work, but still maintains a simplistic minimal weight. 
+
+**Main Features** 
+
+*Home Page Highlights*
+  - [x] Publications 
+    - Automatic bibliography formatting with jekyll-scholar 
+  - [x] Coursework
+  - [x] Teaching 
+  - [x] Projects
+
+*Blog*
+  - [x] Wordpress-Styled Blog Page 
+    - Sidebar Widgets
+    - Embedded Twitter Timeline 
+
+
 
 ## Installation   
 

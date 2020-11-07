@@ -84,24 +84,24 @@
 <link rel="mask-icon" href="/assets/img/icons/safari-pinned-tab.svg" color="#5bbad5">
 
 <meta property="fb:app_id" content="{{ site.fbappid }}">
-<meta property="og:url" content="{{ site.url }}">
+<meta property="og:url" content="{{ page.url }}">
 <meta property="og:type" content="website">
-<meta property="og:title" content="{{ site.title}}, {{ site.description }}">
-<meta property="og:image" content="{{ site.image }}">
-<meta property="og:image:alt" content="{{ site.image_alt }}">
-<meta property="og:description" content="{{ site.description }}">
-<meta property="og:site_name" content="{{ site.title }}">
+<meta property="og:title" content="{{ page.description }}">
+<meta property="og:image" content="{{ page.image }}">
+<meta property="og:image:alt" content="{{ page.image_alt }}">
+<meta property="og:description" content="{{ page.description }}">
+<meta property="og:site_name" content="{{ page.title }}">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="{{ site.author }}">
+<meta property="article:author" content="{{ page.author }}">
 
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:site" content="@{{ site.twitter }}">
-<meta name="twitter:creator" content="@{{ site.twitter }}">
-<meta name="twitter:url" content="{{ site.url }}">
-<meta name="twitter:title" content="{{ site.description }}">
-<meta name="twitter:description" content="{{ site.description }}">
-<meta name="twitter:image" content="{{ site.image }}">
-<meta name="twitter:image:alt" content="{{ site.image_alt }}">
+<meta name="twitter:site" content="@{{ page.twitter }}">
+<meta name="twitter:creator" content="@{{ page.twitter }}">
+<meta name="twitter:url" content="{{ page.url }}">
+<meta name="twitter:title" content="{{ page.description }}">
+<meta name="twitter:description" content="{{ page.description }}">
+<meta name="twitter:image" content="{{ page.image }}">
+<meta name="twitter:image:alt" content="{{ page.image_alt }}">
 
 <!-- Used for adding in-document CSS -->
 <style>

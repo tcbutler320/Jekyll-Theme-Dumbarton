@@ -6,11 +6,11 @@
 
 title: Dumbarton 
 email: 
-description: A minimalistic jekyll theme for academics
+description: a minimalistic jekyll theme for academics
 baseurl:                                       # the subpath of your site, e.g. /blog
 url: "https://dumbarton.netlify.app/"          # the base hostname & protocol for your site, e.g. http://example.com
-image:                                         # used to generate site link preview
-image_alt:                                     # image description
+image: /assets/img/dumbarton.png               # used to generate site link preview
+image_alt: A minimalistic jekyll theme for academic    # image description
 
 # =======================================#
 # -----------SITE SETTINGS---------------#
@@ -33,8 +33,7 @@ phonenumber:
 tags:  post jekyll styleguide ipsum
 
 gittalk_client_id: 309bf7a670f204bd2a3e                    
-gittalk_client_secret:     # set this as an enviorment variable in your netlify setting if deploying to netlify
-gittalk_repo: https://github.com/tcbutler320/Jekyll-Theme-Dumbarton
+gittalk_repo: Jekyll-Theme-Dumbarton
 gittalk_owner: tcbutler320
 gittalk_admin: tcbutler320
 gittalk_distraction_mode: false
@@ -70,7 +69,7 @@ home_popup: false
 # =======================================#    # These  settings are for demo purposes only, things like 
 # -----------HELP SETTINGS---------------#    #     popup toasts and tooltips designed to help new 
 #========================================#    #     developers as they look into using this theme      
-help_tips: true                               # options: true, false  | use false to disable these for production mode
+help_tips: false                               # options: true, false  | use false to disable these for production mode
 
 
 # =======================================#
@@ -85,6 +84,7 @@ kramdown:
 plugins:
   - jekyll-feed
   - jekyll-scholar
+  - jekyll-environment-variables
 sass:
   sass_dir: _sass
   style: compressed
