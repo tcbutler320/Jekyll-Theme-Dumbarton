@@ -109,41 +109,33 @@ layout: default
             {% elsif section.name == "Projects" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
                 <h5 class="card-title text-center" style="font-family:Courgette;"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
-                <div class="row row-cols-1 row-cols-md-2 ">
                   {% for projects in site.data.projects %}
-                    <div class="col mb-4">
-                      <div class="card">
-                        <img src="{{ projects.image }}" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">{{ projects.title }}</h5>
-                          <p class="card-text">{{ projects.description }}</p>
-                        </div>
-                      </div>
+                  <div class="media">
+                    <img src="{{ projects.image }}" class="mr-3 mb-2 img-thumbnail" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0">{{ projects.name }}</h5>
+                      {{ projects.description }}
                     </div>
+                  </div>
                   {% endfor %}
                 </div>        
               </div>
             {% elsif section.name == "Teaching" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
                 <h5 class="card-title text-center" style="font-family:Courgette;"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
-                  <div class="accordion" id="accordionExample">
-                    {% for courses in site.data.courses %}
-                    <div class="card">
-                      <div class="card-header" id="{{ courses.heading-id }}">
-                        <h2 class="mb-0">
-                          <button class="btn btn-link text-left" type="button" data-toggle="collapse" data-target="#{{ courses.data-id }}" aria-expanded="true" aria-controls="{{ courses.data-id }}">
-                            {{ courses.Course }}
-                          </button>
-                        </h2>
-                      </div>
+                    {% for courses in site.data.teaching %}
+                    <div class="list-group">
+                      <a href="#" class="list-group-item list-group-item-action" style="background-color:#e8e8e8;">
+                        <div class="d-flex w-100 justify-content-between">
+                          <h5 class="mb-1">{{ courses.Schoool }}</h5>
+                          <p>{{ courses.Program }}</p>
+                          <small>3 days ago</small>
+                        </div>
+                        <p class="mb-1">{{ courses.description }}</p>
+                        <small>Donec id elit non mi porta.</small>
+                      </a>
                     </div>
-                    <div id="{{ courses.data-id }}" class="collapse show" aria-labelledby="{{ courses.heading-id }}" data-parent="#accordionExample">
-                      <div class="card-body">
-                        {{ courses.description }}
-                      </div>
-                    </div>
-                  {% endfor %}
-                  </div>
+                    {% endfor %}
               </div>
             {% elsif section.name == "Coursework" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
@@ -215,5 +207,17 @@ var myBarChart = new Chart(ctx, {
         }
     }
 });
+</script>
+
+
+
+
+
+<script>
+$('.collapse').collapse()
+</script>
+
+<script>
+$('.show').show()
 </script>
 
