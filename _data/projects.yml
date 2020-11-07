@@ -1,24 +1,30 @@
 - name: Project 1
   id: project1
-  description: My first project
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
   date: true
   link: https://example.com
-  image:  /assets/img/projects/project1.jpeg
+  image:  http://placehold.it/100x100
 
 
 - name: Project 2
   id: project2
-  description: My second project
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
   date: true
   link: https://example.com
-  image: /assets/img/projects/project2.jpeg
+  image: http://placehold.it/100x100
 
 - name: Project 3
   id: project3
-  description: My third project
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
   date: true
   link: https://example.com
-  image:  /assets/img/projects/project3.jpeg
+  image:  http://placehold.it/100x100
 
 - name: Project 4
   id: project4
@@ -27,4 +33,4 @@
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 0
   date: true
   link: https://example.com
-  image: /assets/img/projects/project5.jpeg
+  image: http://placehold.it/100x100

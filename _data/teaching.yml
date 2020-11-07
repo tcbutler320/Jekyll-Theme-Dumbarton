@@ -6,6 +6,7 @@
   heading-id: head-harv1
   Start Date: 
   End Date: 
+  first: true   # one must be true to properly display
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   Icon: /assets/img/icons/2x/harvard-crop.png        # Make this icon small, think 30px/30px
@@ -18,6 +19,7 @@
   heading-id: head-princ1  # This can be any random string as long as each teaching set has a unique one. 
   Start Date: 
   End Date: 
+  first: false
   description: >
     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
