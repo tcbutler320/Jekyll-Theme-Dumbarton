@@ -91,12 +91,12 @@ layout: default
           {% else %}  
             {% if section.name == "Presentations" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center" style="font-family:Courgette;"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
+                <h5 class="card-title text-center" style="font-family:Courgette;">{{section.description}}</h5>
                 <p class="card-text">{% bibliography -f presentations %}</p>              
               </div>
             {% elsif section.name == "Projects" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center" style="font-family:Courgette;"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
+                <h5 class="card-title text-center" style="font-family:Courgette;">{{section.description}}</h5>
                   {% for projects in site.data.projects %}
                   <div class="media">
                     <img src="{{ projects.image }}" class="mr-3 mb-2 img-thumbnail" alt="...">
@@ -110,7 +110,7 @@ layout: default
               </div>
             {% elsif section.name == "Teaching" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center" style="font-family:Courgette;"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
+                <h5 class="card-title text-center" style="font-family:Courgette;">{{section.description}}</h5>
                     {% for courses in site.data.teaching %}
                     <div class="list-group">
                       <a href="#" class="list-group-item list-group-item-action">
@@ -127,7 +127,7 @@ layout: default
               </div>
             {% elsif section.name == "Coursework" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center" style="font-family:Courgette;"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
+                <h5 class="card-title text-center" style="font-family:Courgette;">{{section.description}}</h5>
                 <div class="list-group">
                 {% for courses in site.data.courses %}
                   <button type="button" class="list-group-item list-group-item-action">{{ courses.Course }}</button>
