@@ -1,47 +1,30 @@
 <!-- Displays Social Media Icons based on _config.yml settings -->
-{% if site.color-scheme == "demo" %}
-    {{ if site.twitter }}
-    <span style="color: White;">
-        <i> &nbsp;&nbsp; </i>
-            <a class="social-link" href="https://twitter.com/{{ site.twitter }}">
-                <span style="color: White;">
-                    <i class="fab fa-twitter-square fa-lg"></i></a>
-                </span>
-        {{ elseif site.github }}
-            <a href="https://github.com/{{ site.github }}">
-             <span style="color: White;">
-                <i class="fab fa-github-square fa-lg"></i></a>
+{{ if site.twitter }}
+<span style="color: White;">
+    <i> &nbsp;&nbsp; </i>
+        <a class="social-link" href="https://twitter.com/{{ site.twitter }}">
+            <span style="color: White;">
+                <i class="fab fa-twitter-square fa-lg"></i></a>
             </span>
-        {{ elseif site.linkedin }}
-            <a href="https://www.linkedin.com/in/{{ site.linkedin }}">
-                <span style="color: White;">
-                    <i class="fab fa-linkedin fa-lg"></i></a>
-                </span>
-        {{ elseif site.codepen }}
-            <a href="https://codepen.io/{{ site.codepen }}">
-                <span style="color: White;">
-                    <i class="fab fa-codepen fa-lg"></i></a>
-                </span>
-        {{ elseif site.stackoverflow }}
-            <a href="https://stackoverflow.com/users/story/{{ site.stackoverflow }}">
-                <span style="color: White;">
-                    <i class="fab fa-stack-overflow fa-lg"></i></a>
-                </span>
-        <i> &nbsp;&nbsp; </i>
-    </span>
-    {{ endif }}
-{% else %}
-    {{ if site.twitter }}
-    <i> &nbsp;&nbsp; </i>
-    <a class="social-link" href="https://twitter.com/{{ site.twitter }}"><i class="fab fa-twitter-square fa-lg"></i></a>
     {{ elseif site.github }}
-    <a href="https://github.com/{{ site.github }}"><i class="fab fa-github-square fa-lg"></i></a>
+        <a href="https://github.com/{{ site.github }}">
+            <span style="color: White;">
+            <i class="fab fa-github-square fa-lg"></i></a>
+        </span>
     {{ elseif site.linkedin }}
-    <a href="https://www.linkedin.com/in/{{ site.linkedin }}"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="https://www.linkedin.com/in/{{ site.linkedin }}">
+            <span style="color: White;">
+                <i class="fab fa-linkedin fa-lg"></i></a>
+            </span>
     {{ elseif site.codepen }}
-    <a href="https://codepen.io/{{ site.codepen }}"><i class="fab fa-codepen fa-lg"></i></a>
+        <a href="https://codepen.io/{{ site.codepen }}">
+            <span style="color: White;">
+                <i class="fab fa-codepen fa-lg"></i></a>
+            </span>
     {{ elseif site.stackoverflow }}
-    <a href="https://stackoverflow.com/users/story/{{ site.stackoverflow }}"><i class="fab fa-stack-overflow fa-lg"></i></a>
+        <a href="https://stackoverflow.com/users/story/{{ site.stackoverflow }}">
+            <span style="color: White;">
+                <i class="fab fa-stack-overflow fa-lg"></i></a>
+            </span>
     <i> &nbsp;&nbsp; </i>
-    {{ endif }}
-{% endif %}
+</span>

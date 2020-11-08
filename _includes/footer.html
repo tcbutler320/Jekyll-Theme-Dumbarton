@@ -1,18 +1,9 @@
-{% if site.color-scheme=="demo" %}
-<footer class="footer mt-auto py-3" style="background-color:{{ site.demo-color }};">
+<footer class="footer mt-auto py-3" style="background-color:{{ site.footer-color }};">
     <div class="container">
      <span class="text-white" style="font-family:Courgette;">{{ site.title }}</span>
         {% include social.html %}
     </div>
 </footer>
-{% else %}
-<footer class="footer mt-auto py-3">
-    <div class="container">
-       <span class="text-white" style="font-family:Courgette;">{{ site.title }}</span>
-        {% include social.html %}
-    </div>
-</footer>
-{% endif %}
 
 <script>
   $(function () {

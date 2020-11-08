@@ -59,28 +59,16 @@ layout: default
 {% else %}
 <div class="card mx-auto" style="max-width: 100%;">
 {% endif %}
-  {% if site.color-scheme=="demo" %}
-  <div class="card-header" style="background-color:{{ site.demo-color }};">
-  {% else %}
-  <div class="card-header">
-  {% endif %}
+  <div class="card-header" style="background-color:{{ site.card-color }};">
     <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
       {% for section in site.data.sections %}
         {% if section.first %}
           <li class="nav-item">
-            {% if site.color-scheme=="demo" %}
             <a class="nav-link active" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}}" aria-selected="true">{{section.name}}</a>
-            {% else %}
-            <a class="nav-link active" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}}" aria-selected="true">{{section.name}}</a>
-            {% endif %}
           </li>
         {% else %}
           <li class="nav-item">
-              {% if site.color-scheme=="demo" %}
               <a class="nav-link text-light"  href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="false">{{section.name}}</a>
-              {% else %}
-              <a class="nav-link"  href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="false">{{section.name}}</a>
-              {% endif %}
           </li>
         {% endif %}
       {% endfor %}
@@ -129,7 +117,7 @@ layout: default
                         <div class="d-flex w-100 justify-content-between">
                           <h5 class="mb-1">{{ courses.Schoool }}</h5>
                           <p>{{ courses.Program }}</p>
-                          <small>3 days ago</small>
+                          <small>{{ courses.StartDate }}</small>
                         </div>
                         <p class="mb-1">{{ courses.description }}</p>
                         <small>Donec id elit non mi porta.</small>
