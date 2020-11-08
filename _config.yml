@@ -56,10 +56,6 @@ nav-color: "#00334e"                                 # options: light, dark, tra
 footer-color: "#00334e"
 color-scheme: "#00334e"                              # options: demo | changes color scheme based on preset values 
 card-color: "#00334e"                                # Used on cards like the home highlights section
-
-
-google-font: Roboto                                  # Choose any Google API Font,see a list here https://fonts.google.com/?
-google-font-name: Roboto 
 nav-dIcon: "fas fa-caret-down"                       # Change the navbar dropdown (for mobile or small screen sizes) to any fontawesome icon. for a list of icons visit https://fontawesome.com/ 
 animate: true                                        # false or true, uses animate.css to animate certain functions
 
