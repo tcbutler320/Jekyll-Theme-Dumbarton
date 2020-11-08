@@ -21,11 +21,7 @@ last-updated: 2020-10-30 5:55 PM
               <div class="card-body">
                 <h2 class="card-title">{{ post.title }}</h2>
                 <p class="card-text">{{ post.description }}</p>
-                {% if site.nav-color == "demo"  %}
-                <a href="{{ post.url }}" class="btn btn-primary text-white" style="background-color:#00334e">Read Article &rarr;</a>
-                {% else %}
-                <a href="{{ post.url }}" class="btn btn-primary">Read Article &rarr;</a>
-                {% endif %}
+                <a href="{{ post.url }}" class="btn btn-primary text-white" style="background-color:{{ site.card-color }}">Read Article &rarr;</a>
               </div>
               <div class="card-footer text-muted">
                 Posted on {{ post.date }} by
@@ -69,11 +65,7 @@ last-updated: 2020-10-30 5:55 PM
                   <ul class="list-unstyled mb-0">
                     {% for tag in site.tags %}
                     <li>
-                      {% if site.nav-color == "demo"  %}
-                      <a href="#" class="btn btn-sm mt-1 mb-1 text-white" style="background-color:#5588a3">{{ tag[0] }}</a>
-                      {% else %}
-                      <a href="#" class="btn btn-sm mt-1 mb-1 btn-dark">{{ tag[0] }}</a>
-                      {% endif %}
+                      <a href="#" class="btn btn-sm mt-1 mb-1 text-white" style="background-color:{{ site.card-color }}">{{ tag[0] }}</a>
                     </li>
                     {% endfor %}
                   </ul>

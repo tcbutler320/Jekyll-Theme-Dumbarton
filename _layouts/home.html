@@ -15,7 +15,7 @@ layout: default
     </button>
   </div>
   <div class="toast-body">
-    Thanks for checking out Jekyll-Theme-Dumbarton ! This theme was developed by <a href="https://github.com/tcbutler320">Tyler Butler</a>. If you're interested in using this in your own website, checkout the project on <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton">Github</a>
+    Thanks for checking out Jekyll-Theme-Dumbarton ! This theme was developed by <a href="https://twitter.com/tbutler0x90">Tyler Butler</a>. If you're interested in using this in your own website, checkout the project on <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton">Github</a>
   </div>
 </div>
 {% endif %}
@@ -59,28 +59,16 @@ layout: default
 {% else %}
 <div class="card mx-auto" style="max-width: 100%;">
 {% endif %}
-  {% if site.color-scheme=="demo" %}
-  <div class="card-header" style="background-color:{{ site.demo-color }};">
-  {% else %}
-  <div class="card-header">
-  {% endif %}
+  <div class="card-header" style="background-color:{{ site.card-color }};">
     <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
       {% for section in site.data.sections %}
         {% if section.first %}
           <li class="nav-item">
-            {% if site.color-scheme=="demo" %}
             <a class="nav-link active" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}}" aria-selected="true">{{section.name}}</a>
-            {% else %}
-            <a class="nav-link active" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}}" aria-selected="true">{{section.name}}</a>
-            {% endif %}
           </li>
         {% else %}
           <li class="nav-item">
-              {% if site.color-scheme=="demo" %}
               <a class="nav-link text-light"  href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="false">{{section.name}}</a>
-              {% else %}
-              <a class="nav-link"  href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="false">{{section.name}}</a>
-              {% endif %}
           </li>
         {% endif %}
       {% endfor %}
@@ -125,11 +113,11 @@ layout: default
                 <h5 class="card-title text-center" style="font-family:Courgette;"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
                     {% for courses in site.data.teaching %}
                     <div class="list-group">
-                      <a href="#" class="list-group-item list-group-item-action" style="background-color:#e8e8e8;">
+                      <a href="#" class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between">
                           <h5 class="mb-1">{{ courses.Schoool }}</h5>
                           <p>{{ courses.Program }}</p>
-                          <small>3 days ago</small>
+                          <small>{{ courses.StartDate }} - {{ courses.EndDate }}</small>
                         </div>
                         <p class="mb-1">{{ courses.description }}</p>
                         <small>Donec id elit non mi porta.</small>

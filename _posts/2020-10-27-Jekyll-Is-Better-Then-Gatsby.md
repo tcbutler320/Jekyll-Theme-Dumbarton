@@ -1,5 +1,5 @@
 ---
-layout: post-2
+layout: post
 title:  "Posts Can Also Not Have Images"
 description: "I'll Tell You Why"
 date:   2020-10-27 20:01:21 -0400

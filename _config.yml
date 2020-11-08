@@ -18,9 +18,9 @@ image_alt: A minimalistic jekyll theme for academic    # image description
 
 # =======================================#
 # -----------SITE SETTINGS---------------#
-#========================================#
+#========================================#: 
 author: John Doe 
-profile_image:  http://placehold.it/500x700?text=Insert+Profile+Picture+Here #/assets/img/avatar/avatar.jpeg 
+profile_image: http://placehold.it/500x700?text=Insert+Profile+Picture+Here #/assets/img/avatar/avatar.jpeg 
 occupation: 
 snippet: 
 twitter: tbutler0x90
@@ -40,49 +40,34 @@ phonenumber:
 
 tags:  post jekyll styleguide ipsum
 
-comments: false                                    # Used to enable comments on blog posts
-gitalk_client_id: 309bf7a670f204bd2a3e            
+comments: false                                     # Used to enable comments on blog posts
+gitalk_client_id:             
 gitalk_client_secret:    
-gitalk_repo: Jekyll-Theme-Dumbarton
-gitalk_owner: tcbutler320
-gitalk_admin: tcbutler320
+gitalk_repo:
+gitalk_owner: 
+gitalk_admin: 
 gitalk_distraction_mode: false
 
 # =======================================#
 # -----------THEME SETTINGS--------------#
 #========================================#
 
-scheme: demo 
-nav-color: demo                                # options: light, dark, transparent, primary, custom | Change the color of the navbar
-footer-color: demo
-color-scheme: demo                              # options: demo | changes color scheme based on preset values 
-home-highlights-color:
-google-font: Roboto #Roboto:wght@300 #Itim #Crimson+Text                            # Choose any Google API Font,see a list here https://fonts.google.com/?
-google-font-name: Roboto #Itim #Crimson Text
-#        My Top choices are [Bitter,Crimson Text] 
-nav-dIcon: "fas fa-caret-down"                 # Change the navbar dropdown (for mobile or small screen sizes) to any fontawesome icon. for a list of icons visit https://fontawesome.com/ 
-animate: true                                      # false or true, uses animate.css to animate certain functions
-
-navbar-color: "#00334e"
-demo-color: "#00334e"
+nav-color: "#00334e"                                 # options: light, dark, transparent, primary, custom | Change the color of the navbar
+footer-color: "#00334e"
+color-scheme: "#00334e"                              # options: demo | changes color scheme based on preset values 
+card-color: "#00334e"                                # Used on cards like the home highlights section
+nav-dIcon: "fas fa-caret-down"                       # Change the navbar dropdown (for mobile or small screen sizes) to any fontawesome icon. for a list of icons visit https://fontawesome.com/ 
+animate: true                                        # false or true, uses animate.css to animate certain functions
 
 # =======================================#
 # -----------HOME PAGE  SETTINGS --------#
 #========================================#
-home_option: education                          # options: education, skills, timeline
+home_option: education                               # options: education, skills, timeline
 
-# =======================================#     # These options include popups, modals, and toasts designed to 
-# -------USER INTERACTION SETTINGS-------#     #   make the site more interactive for the user or to highlight
-#========================================#     #   certain sections. Powered by BootStrap 4 
-
-home_modal: false
-home_toasts: false
-home_popup: false
-
-# =======================================#    # These  settings are for demo purposes only, things like 
-# -----------HELP SETTINGS---------------#    #     popup toasts and tooltips designed to help new 
-#========================================#    #     developers as they look into using this theme      
-help_tips: false                               # options: true, false  | use false to disable these for production mode
+# =======================================#          # These  settings are for demo purposes only, things like 
+# -----------HELP SETTINGS---------------#          #     popup toasts and tooltips designed to help new 
+#========================================#          #     developers as they look into using this theme      
+help_tips: true                                    # options: true, false  | use false to disable these for production mode
 
 
 # =======================================#
@@ -139,19 +124,18 @@ scholar:
 # ------------CDN SETTINGS---------------#
 #-------------Used to generate icons-----#
 #========================================#
-font_awesome_id: 32a2b2a489                   # Register for free at https://fontawesome.com/ to get your id
+font_awesome_id: 32a2b2a489                       # Register for free at https://fontawesome.com/ to get your id
 
 
-# =======================================#    # For more information about these settings, visit https://htmlhead.dev #
+# =======================================#        # For more information about these settings, visit https://htmlhead.dev #
 # ------------META TAG SETTINGS----------#
 #========================================#
-themecolor: "#4285f4"                         # Theme Color for Chrome, Firefox OS and Opera -->
-google-site-verification:                     #<meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
-yandex-verification:                          #<meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
-msvalidate:                                   # meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
-alexaVerifyID:                                # <meta name="alexaVerifyID" content="verification_token"><!-- Alexa Console -->
-pinterestdomain_verify:                       #<meta name="p:domain_verify" content="code_from_pinterest"><!-- Pinterest Console-->
-norton-safeweb:                               # <meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
-detectphone: yes                              # yes or no. Disable automatic detection and formatting of possible phone numbers 
-x-dns-prefetch-control: on                    # on or off. Completely opt out of DNS prefetching by setting to "off"
-fbappid:                                      # Facebook OpenGraph 
+google-site-verification:                         #<meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
+yandex-verification:                              #<meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
+msvalidate:                                       # meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
+alexaVerifyID:                                    # <meta name="alexaVerifyID" content="verification_token"><!-- Alexa Console -->
+pinterestdomain_verify:                           #<meta name="p:domain_verify" content="code_from_pinterest"><!-- Pinterest Console-->
+norton-safeweb:                                   # <meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
+detectphone: yes                                  # yes or no. Disable automatic detection and formatting of possible phone numbers 
+x-dns-prefetch-control: on                        # on or off. Completely opt out of DNS prefetching by setting to "off"
+fbappid:                                          # Facebook OpenGraph 
