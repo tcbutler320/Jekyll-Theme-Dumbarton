@@ -113,11 +113,11 @@ layout: default
                 <h5 class="card-title text-center" style="font-family:Courgette;"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
                     {% for courses in site.data.teaching %}
                     <div class="list-group">
-                      <a href="#" class="list-group-item list-group-item-action" style="background-color:#e8e8e8;">
+                      <a href="#" class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between">
                           <h5 class="mb-1">{{ courses.Schoool }}</h5>
                           <p>{{ courses.Program }}</p>
-                          <small>{{ courses.StartDate }}</small>
+                          <small>{{ courses.StartDate }} - {{ courses.EndDate }}</small>
                         </div>
                         <p class="mb-1">{{ courses.description }}</p>
                         <small>Donec id elit non mi porta.</small>
