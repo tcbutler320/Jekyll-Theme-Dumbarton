@@ -33,16 +33,12 @@
   - [Base  Settings](#base-settings)
   - [Site Settings](#site-settings)
   - [Blog Settings](#blog-settings)
-- [Style](#style)
-- [Academic Options](#academic-options)
-  - [Jekyll Scholar](#jekyll-scholar)
-- [Theme Options](#theme-options)
-    - [Demo Theme](#demo-theme)
-- [Blog Settings](#blog-settings-1)
-  - [Blog Page Settings](#blog-page-settings)
+  - [Theme Settings](#theme-settings)
+  - [Help Settings](#help-settings)
+  - [Jekyll Scholar Settings](#jekyll-scholar-settings)
+  - [CDN Settings](#cdn-settings)
+  - [Meta Tag Settings](#meta-tag-settings)
   - [Favicon](#favicon)
-  - [Meta Data](#meta-data)
-  - [Media](#media)
 - [Thanks](#thanks)
 
 ## About 
@@ -115,54 +111,72 @@ There are many settings available to users to change how the theme looks. These 
 | `tags`  	|  Used to generate tags widget on blogs page, seperated by spaces  	| ex `tags:  post jekyll`  	|
 | `comments`   | Enable comments on blog posts using gitalk. **Not Currently Working**    |  `comments: false`   |
 
+### Theme Settings 
 
-## Style 
+| _config.yml  	| Description  	| Options  	|
+|---	|---	|---	|
+| `nav-color`  	|  Color of the top navivation bar 	|  ex: `"#00334e"` 	|
+| `footer-color`  	|  Color of the bottom footer bar 	|  ex: `"#00334e"` 	|
+| `card-color`  	|  Color of additional cards like the home highlights section, as well as buttons used on the blog and contact me page 	|  ex: `"#00334e"` 	|
+|  `nav-dIcon` 	|  Used as the nav bar drop down icon on mobile or small screen view 	| Select any fontawesome icon, ex: `"fas fa-caret-down"`  	|
+|  `animate` 	| When enabled, home page animations will be turned on and used upon first loading the page  	| ex: `true`, `false`  	|
+|  `home_option` 	| Used to change the section below the 'about me' on the home page. **Note that only option `education` is currently working**  	|  ex: `education` 	|
 
-**Bootstrap CDN**
+### Help Settings 
 
-**Fontawesome** 
+| _config.yml  	| Description  	| Options  	|
+|---	|---	|---	|
+| `help_tips`  	|  Used for demo purposes only. When enabled, a popup occurs on the homepage detailing information about the theme 	|  ex: `true`,`false` |
 
-## Academic Options 
 
-### Jekyll Scholar 
+### Jekyll Scholar Settings 
 *Excerpt from [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar)*
 > Jekyll-Scholar is for all the academic bloggers out there. It is a set of extensions to Jekyll, the awesome, blog aware, static site generator; it formats your bibliographies and reading lists for the web and gives your blog posts citation super-powers.  
 
-
-## Theme Options 
-
-#### Demo Theme 
-
-Style pallet can be found at https://colorhunt.co/palette/144191
-
-## Blog Settings 
-
-### Blog Page Settings   
-
-The main blog page uses Bootstrap 4 Cards to preview individual blog posts. There are several different types of preview styles available. Set the preview by changing the frontmatter on the post *.md file in the `_posts` directory. The current available options are below.  
-
-|   Option       |   Syntax       |  Description       |   Preview  |
-|----------------|----------------|--------------------|------------|
-| card-img-top  | `card-img-top`  |  Image on top      |            |
-| card-dated    | `card-dated`    |  Shows Date        |            |
-| card-no-img   | `card-no-img`   |  No Header Image   |            |
+The [Jekyll Scholar](https://github.com/inukshuk/jekyll-scholar) plugin is used on the publications page and the home page publications highlight section. Refer to the [official documentation](https://github.com/inukshuk/jekyll-scholar) for setting options.  
 
 
+```yml
+scholar:
+  last_name: Dumbarton
+  style: apa
+  locale: en
+  source: /_bibliography/
+  bibliography: papers.bib
+  bibliography_template: bib
+  replace_strings: true
+  join_strings: true
+  details_dir: bibliography
+  details_layout: bibtex.html
+  details_link: 
+  query: "@*"
+``` 
 
+### CDN Settings
 
+| _config.yml  	| Description  	| Options  	|
+|---	|---	|---	|
+|  font_awesome_id 	| Used to generate fontawesome icons in the navbar. Register free to get your id  at https://fontawesome.com/	| N/A  	|
+
+### Meta Tag Settings   
+Several meta tag settings are optional. Refer to [htmlhead.dev](https://htmlhead.dev/) for a full list of options and explanations for the below configurations.  
+
+```yml
+google-site-verification:                         #<meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
+yandex-verification:                              #<meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
+msvalidate:                                       # meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
+alexaVerifyID:                                    # <meta name="alexaVerifyID" content="verification_token"><!-- Alexa Console -->
+pinterestdomain_verify:                           #<meta name="p:domain_verify" content="code_from_pinterest"><!-- Pinterest Console-->
+norton-safeweb:                                   # <meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
+detectphone: yes                                  # yes or no. Disable automatic detection and formatting of possible phone numbers 
+x-dns-prefetch-control: on                        # on or off. Completely opt out of DNS prefetching by setting to "off"
+fbappid:                                          # Facebook OpenGraph 
+```  
 
 ### Favicon 
 
 Site favicons are located at `/assets/img/icons`. You can use a [Favicon Generator](https://realfavicongenerator.net/) to create a new set of icons using any image you'd like. Simply create a package from the aboved linked generator and replace the icons folder. 
 
-### Meta Data 
-
-For more information about editing the metadata used in `header.html` can be found on [htmlhead.dev](https://htmlhead.dev/)
-
-
-### Media
-
-Sample images used in the Dumbarton Demo site were found on [unsplash](https://unsplash.com/)
 
 
 ## Thanks 
