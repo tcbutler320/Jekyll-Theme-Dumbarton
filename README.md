@@ -22,7 +22,7 @@
   </p>
 </p>
 
-![](screenshot.png)  
+![](https://raw.githubusercontent.com/tcbutler320/Jekyll-Theme-Dumbarton/dev/screenshot.png)
 
 ## Table of Contents
 

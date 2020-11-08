@@ -18,6 +18,10 @@ html {
     background-color: #f5f5f5;
   }
 
+code {
+    font: 0.85em Monaco, Courier, Monospace;
+}
+
 
 a.highlighted, a.highlighted:link {
   color: black;
