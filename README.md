@@ -190,15 +190,6 @@ I borrowed concepts and assets from various other open source projects. A specia
 *Images*   
 Special thanks to the following indivuals for their images  
 +  [Cole Keister](https://unsplash.com/@coleito)
-+  [Peter Secan](https://unsplash.com/@phsecan)  
-+  [Terry Boynton](https://unsplash.com/@terry_boynton)
-+  [Stephen Valentin](https://unsplash.com/@valentinsteph)
-+  [Laurasaman](https://unsplash.com/@laurasamang)
-+  [Luke Chesser](https://unsplash.com/photos/LG8ToawE8WQ)
-+  [Yancy Min](https://unsplash.com/@yancymin)
-+  [Safar Safarov](https://unsplash.com/@codestorm)
-+  [Emile Perron](https://unsplash.com/@emilep)
-
 
 
 <!-- MARKDOWN LINKS AND IMAGES --->
