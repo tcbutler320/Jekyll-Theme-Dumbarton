@@ -67,7 +67,7 @@ home_option: education                               # options: education, skill
 # =======================================#          # These  settings are for demo purposes only, things like 
 # -----------HELP SETTINGS---------------#          #     popup toasts and tooltips designed to help new 
 #========================================#          #     developers as they look into using this theme      
-help_tips: true                                    # options: true, false  | use false to disable these for production mode
+help_tips: false                                    # options: true, false  | use false to disable these for production mode
 
 
 # =======================================#
