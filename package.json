@@ -2,7 +2,6 @@
   "name": "dumbarton",
   "version": "1.0.0",
   "description": "A Jekyll theme for academics",
-  "main": "index.js",
   "scripts": {
     "test": "test"
   },
