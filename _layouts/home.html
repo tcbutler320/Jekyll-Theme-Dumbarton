@@ -98,11 +98,17 @@ layout: default
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
                 <h5 class="card-title text-center" style="font-family:Courgette;">{{section.description}}</h5>
                   {% for projects in site.data.projects %}
-                  <div class="media">
+                  <div class="media  mt-3">
                     <img src="{{ projects.image }}" class="mr-3 mb-2 img-thumbnail" alt="...">
                     <div class="media-body">
                       <h5 class="mt-0">{{ projects.name }}</h5>
                       {{ projects.description }}
+                      {% if projects.tech %}
+                        <h6><mark><u>Technologies</u></mark></h6>
+                        {% for tech in projects.tech %}
+                        <span class="badge badge-secondary mr-1" style="background-color:#145374;">{{ tech }}</span>
+                        {% endfor %}
+                      {% endif %}
                     </div>
                   </div>
                   {% endfor %}
