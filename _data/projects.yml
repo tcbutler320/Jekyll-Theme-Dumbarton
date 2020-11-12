@@ -6,6 +6,8 @@
   date: true
   link: https://example.com
   image:  http://placehold.it/100x100
+  tech: 
+    - python
 
 
 - name: Project 2
@@ -16,6 +18,8 @@
   date: true
   link: https://example.com
   image: http://placehold.it/100x100
+  tech: 
+    - c++
 
 - name: Project 3
   id: project3
@@ -25,6 +29,10 @@
   date: true
   link: https://example.com
   image:  http://placehold.it/100x100
+  tech: 
+    - Java
+    - Maven
+    - Jenkins
 
 - name: Project 4
   id: project4
@@ -34,3 +42,6 @@
   date: true
   link: https://example.com
   image: http://placehold.it/100x100
+  tech: 
+    - Sonarcube
+    - Java
