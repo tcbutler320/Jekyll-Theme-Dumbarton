@@ -30,7 +30,7 @@
 - [About](#about)
 - [Installation](#installation)
 - [Setting Options](#setting-options)
-  - [Base  Settings](#base-settings)
+  - [Base  Settings](#base--settings)
   - [Site Settings](#site-settings)
   - [Blog Settings](#blog-settings)
   - [Theme Settings](#theme-settings)
@@ -58,7 +58,8 @@ Jekyll-Theme-Dumbarton is a jekyll theme designed for academics. This theme is d
     - Sidebar Widgets
     - Embedded Twitter Timeline 
 
-
+**A Note on Compatability**   
+*At this time, this theme is not compatible with GitHub pages because GitHub does not support jekyll-scholar.*  
 
 ## Installation   
 
