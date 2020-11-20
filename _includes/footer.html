@@ -1,9 +1,13 @@
-<footer class="footer mt-auto py-3" style="background-color:{{ site.footer-color }};">
-    <div class="container">
-     <span class="text-white" style="font-family:Courgette;">{{ site.title }}</span>
-        {% include social.html %}
-    </div>
-</footer>
+<div class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    <p class="navbar-text pull-left">© 2020 - Theme Built By Tyler Butler, See it on
+        <a href="https://github.com/tcbutler320/Jekyll-Theme-Dumbarton" target="_blank" >GitHub</a>
+    </p>
+    <p class="navbar-text pull-right">
+            {% include social-footer.html %}
+    </p>
+  </div>
+</div> 
 
 <script>
   $(function () {
