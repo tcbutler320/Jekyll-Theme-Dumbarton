@@ -91,27 +91,27 @@ There are many settings available to users to change how the theme looks. These 
 
 ### Base  Settings 
 
-| `_config.yml`  	| Description  	| Options  	|
+| Field  	| Description  	| Options  	|
 |---	|---	|---	|
 | `image`  	| Used in metatag as sites link preview  	|  https://example.com or /assets/path/to/image.png 	|
 
 ### Site Settings 
 
-| `_config.yml`  	| Description  	| Options  	|
+| Field  	| Description  	| Options  	|
 |---	|---	|---	|
 | `profile_image`  	|  Used on home page as authors profile image 	|  https://example.com or /assets/path/to/image.png  	|
 | social links, ex `twitter`  	|  Used to generate links in the nav and footer 	|  e.g. `twitter: tbutler0x90` 	|
 
 ### Blog Settings 
 
-| `_config.yml`  	| Description  	| Options  	|
+| Field 	| Description  	| Options  	|
 |---	|---	|---	|
 | `tags`  	|  Used to generate tags widget on blogs page, seperated by spaces  	| e.g. `tags:  post jekyll`  	|
 | `comments`   | Enable comments on blog posts using gitalk. **Not Currently Working**    |  `comments: false`   |
 
 ### Theme Settings 
 
-| `_config.yml`  	| Description  	| Options  	|
+| Field  	| Description  	| Options  	|
 |---	|---	|---	|
 | `nav-color`  	|  Color of the top navivation bar 	|  e.g. `"#00334e"` 	|
 | `footer-color`  	|  Color of the bottom footer bar 	|  e.g. `"#00334e"` 	|
@@ -122,12 +122,12 @@ There are many settings available to users to change how the theme looks. These 
 
 ### Help Settings 
 
-| `_config.yml`  	| Description  	| Options  	|
+| Field  	| Description  	| Options  	|
 |---	|---	|---	|
 | `help_tips`  	|  Used for demo purposes only. When enabled, a popup occurs on the homepage detailing information about the theme 	|  e.g. `true`, `false` |
 
-
 ### Jekyll Scholar Settings 
+
 _Excerpt from [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar)_
 
 > Jekyll-Scholar is for all the academic bloggers out there. It is a set of extensions to Jekyll, the awesome, blog aware, static site generator; it formats your bibliographies and reading lists for the web and gives your blog posts citation super-powers.  
@@ -152,7 +152,7 @@ scholar:
 
 ### CDN Settings
 
-| `_config.yml`  	| Description  	| Options  	|
+| Field  	| Description  	| Options  	|
 |---	|---	|---	|
 |  font_awesome_id 	| Used to generate fontawesome icons in the navbar. Register free to get your id  at https://fontawesome.com/	| N/A  	|
 
