@@ -51,18 +51,16 @@ Jekyll-Theme-Dumbarton is a jekyll theme designed for academics. This theme is d
 
 ### Main Features
 
-*Home Page Highlights*
-- [x] Publications 
-- Automatic bibliography formatting with jekyll-scholar 
-- [x] Coursework
-- [x] Teaching 
-- [x] Projects
-
-### Blog
-
-- [x] Wordpress-Styled Blog Page 
-- Sidebar Widgets
-- Embedded Twitter Timeline 
+- Home Page
+    - [x] Publications 
+    - [ ] Automatic bibliography formatting with jekyll-scholar 
+    - [x] Coursework
+    - [x] Teaching 
+    - [x] Projects
+- Blog
+    - [x] Wordpress-Styled Blog Page 
+    - [ ] Sidebar Widgets
+    - [ ] Embedded Twitter Timeline 
 
 **A Note on Compatability**
 
@@ -70,7 +68,7 @@ _At this time, this theme is not compatible with GitHub pages because GitHub doe
 
 ## Installation   
 
-Follow the following instructions to install the Dumbarton theme  
+Follow the following instructions to install the Dumbarton theme: 
 
 1. Clone the repo.
     ```bash
