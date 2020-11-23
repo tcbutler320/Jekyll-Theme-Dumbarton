@@ -100,35 +100,36 @@ There are many settings available to users to change how the theme looks. These 
 | `_config.yml`  	| Description  	| Options  	|
 |---	|---	|---	|
 | `profile_image`  	|  Used on home page as authors profile image 	|  https://example.com or /assets/path/to/image.png  	|
-| social links, ex `twitter`  	|  Used to generate links in the nav and footer 	|  ex `twitter: tbutler0x90` 	|
+| social links, ex `twitter`  	|  Used to generate links in the nav and footer 	|  e.g. `twitter: tbutler0x90` 	|
 
 ### Blog Settings 
 
 | `_config.yml`  	| Description  	| Options  	|
 |---	|---	|---	|
-| `tags`  	|  Used to generate tags widget on blogs page, seperated by spaces  	| ex `tags:  post jekyll`  	|
+| `tags`  	|  Used to generate tags widget on blogs page, seperated by spaces  	| e.g. `tags:  post jekyll`  	|
 | `comments`   | Enable comments on blog posts using gitalk. **Not Currently Working**    |  `comments: false`   |
 
 ### Theme Settings 
 
 | `_config.yml`  	| Description  	| Options  	|
 |---	|---	|---	|
-| `nav-color`  	|  Color of the top navivation bar 	|  ex: `"#00334e"` 	|
-| `footer-color`  	|  Color of the bottom footer bar 	|  ex: `"#00334e"` 	|
-| `card-color`  	|  Color of additional cards like the home highlights section, as well as buttons used on the blog and contact me page 	|  ex: `"#00334e"` 	|
-|  `nav-dIcon` 	|  Used as the nav bar drop down icon on mobile or small screen view 	| Select any fontawesome icon, ex: `"fas fa-caret-down"`  	|
-|  `animate` 	| When enabled, home page animations will be turned on and used upon first loading the page  	| ex: `true`, `false`  	|
-|  `home_option` 	| Used to change the section below the 'about me' on the home page. **Note that only option `education` is currently working**  	|  ex: `education` 	|
+| `nav-color`  	|  Color of the top navivation bar 	|  e.g. `"#00334e"` 	|
+| `footer-color`  	|  Color of the bottom footer bar 	|  e.g. `"#00334e"` 	|
+| `card-color`  	|  Color of additional cards like the home highlights section, as well as buttons used on the blog and contact me page 	|  e.g. `"#00334e"` 	|
+|  `nav-dIcon` 	|  Used as the nav bar drop down icon on mobile or small screen view 	| Select any fontawesome icon, e.g. `"fas fa-caret-down"`  	|
+|  `animate` 	| When enabled, home page animations will be turned on and used upon first loading the page  	| e.g. `true`, `false`  	|
+|  `home_option` 	| Used to change the section below the 'about me' on the home page. **Note that only option `education` is currently working**  	|  e.g. `education` 	|
 
 ### Help Settings 
 
 | `_config.yml`  	| Description  	| Options  	|
 |---	|---	|---	|
-| `help_tips`  	|  Used for demo purposes only. When enabled, a popup occurs on the homepage detailing information about the theme 	|  ex: `true`,`false` |
+| `help_tips`  	|  Used for demo purposes only. When enabled, a popup occurs on the homepage detailing information about the theme 	|  e.g. `true`, `false` |
 
 
 ### Jekyll Scholar Settings 
-*Excerpt from [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar)*
+_Excerpt from [Jekyll-Scholar](https://github.com/inukshuk/jekyll-scholar)_
+
 > Jekyll-Scholar is for all the academic bloggers out there. It is a set of extensions to Jekyll, the awesome, blog aware, static site generator; it formats your bibliographies and reading lists for the web and gives your blog posts citation super-powers.  
 
 The [Jekyll Scholar](https://github.com/inukshuk/jekyll-scholar) plugin is used on the publications page and the home page publications highlight section. Refer to the [official documentation](https://github.com/inukshuk/jekyll-scholar) for setting options.  
@@ -183,7 +184,6 @@ I borrowed concepts and assets from various other open source projects. A specia
 
 - [Masresha](https://codepen.io/masresha)
     - [Decision Making App](https://codepen.io/masresha/pen/KyLrbK): Used as a concept for the blog layout
-
 
 ### Images
 
