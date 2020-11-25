@@ -26,7 +26,7 @@
 
 </div>
 
-[![Screenshot](/screenshot.png "Sample screenshot")](https://dumbarton.netlify.app/)
+[![Screenshot](https://raw.githubusercontent.com/tcbutler320/Jekyll-Theme-Dumbarton/dev/screenshot.png "Sample screenshot")](https://dumbarton.netlify.app/)
 
 ## Table of Contents
 
