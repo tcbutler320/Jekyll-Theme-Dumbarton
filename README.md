@@ -32,22 +32,25 @@
 
 - [Table of Contents](#table-of-contents)
 - [About](#about)
+  - [Main Features](#main-features)
 - [Installation](#installation)
 - [Setting Options](#setting-options)
-    - [Base  Settings](#base--settings)
-    - [Site Settings](#site-settings)
-    - [Blog Settings](#blog-settings)
-    - [Theme Settings](#theme-settings)
-    - [Help Settings](#help-settings)
-    - [Jekyll Scholar Settings](#jekyll-scholar-settings)
-    - [CDN Settings](#cdn-settings)
-    - [Meta Tag Settings](#meta-tag-settings)
+  - [Base  Settings](#base--settings)
+  - [Site Settings](#site-settings)
+  - [Blog Settings](#blog-settings)
+  - [Theme Settings](#theme-settings)
+  - [Help Settings](#help-settings)
+  - [Jekyll Scholar Settings](#jekyll-scholar-settings)
+  - [CDN Settings](#cdn-settings)
+  - [Meta Tag Settings](#meta-tag-settings)
   - [Favicon](#favicon)
 - [Thanks](#thanks)
+  - [Code](#code)
+  - [Images](#images)
 
 ## About 
 
-Jekyll-Theme-Dumbarton is a jekyll theme designed for academics. This theme is different from other academic themes in that it incorporates enough features to fully represent your full body of work, but still maintains a simplistic minimal weight. 
+Dumbarton is a Jekyll Theme developed by Tyler Butler. The theme is designed for academics and features a simple home page with an about me section, a blog, and an interactive highlights section to describe publications, coursework, courses taught, and projects. UI design with Bootstrap and Animate CSS.
 
 ### Main Features
 
