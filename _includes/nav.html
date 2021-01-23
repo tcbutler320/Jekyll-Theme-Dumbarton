@@ -1,13 +1,14 @@
-<nav class="navbar navbar-expand-lg text-white" style="background-color:{{ site.nav-color }};">
-  <a class="navbar-brand text-white" href="/index.html"><h4 style="font-family:Courgette;">{{ site.title }}</h4></a>
-  <button class="navbar-toggler text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+{% assign theme = site.data.themes[site.ui_theme] %}
+<nav class="navbar navbar-expand-lg glowing-border mb-4" style="font-family:{{ theme.link-font }};background-color:{{ theme.nav-color }};">
+  <a class="navbar-brand" href="/index.html"><h4 style="font-family:{{ theme.title-font }};font-weight:600;color:{{ theme.nav-text}};">{{ site.title }}</h4></a>
+  <button class="navbar-toggler text-{{ theme.button-color }}" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <i class="{{ site.nav-dIcon }}"></i>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
         {% for item in site.data.nav.links %}
               <li class="nav-item">
-                  <a href="{{ item.url }}" class="nav-link text-white">{{ item.title }}</a>
+                  <a href="{{ item.url }}" class="nav-link" style="font-family:{{ theme.link-font }};color:{{ theme.nav-text}};">{{ item.title }}</a>
               </li>
         {% endfor %}
     </ul>
@@ -16,9 +17,5 @@
         {% include social.html %}
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Ask me anything" aria-label="Search">
-      <button class="btn btn-light btn-sm my-2 my-sm-0" type="submit">Search</button>
-    </form> 
   </div>
 </nav>
