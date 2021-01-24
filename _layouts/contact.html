@@ -1,0 +1,50 @@
+---
+layout: page
+permalink: contact.html
+title: Contact Me
+header-img:  
+last-updated: 2020-10-30 5:55 PM
+---
+{% assign theme = site.data.themes[site.ui_theme] %}
+<div class="blogcard card-2 mb-4 mt-4" style="width: 100%;">
+  <div class="card-body">
+    <h1 class="card-title text-center" style="font-size:{{ theme.post-title-size }};font-weight:{{ theme.post-font-weight }};">{{ page.title }}</h1>
+    <p>{{ content | markdownify }} </p>
+    <!-- Target -->
+    {% if page.pgp %}
+    <input id="foo" style="width:50%;" class="text-muted" value="{{ site.pgp-key }}">
+    <!-- Trigger -->
+    <button class="btn" data-clipboard-target="#foo">
+        <i class="far fa-copy" alt="Copy PGP clipboard"></i>
+        <span style="font-size:14px;">Copy</span>
+    </button>
+    {% endif %}
+  </div>
+</div>
+
+<div class="card shadow">
+  <div class="container">
+    <form name="contact" method="POST" data-netlify="true">
+      <div class="mb-3 mt-5">
+        <input type="name" placeholder="Your Name" name="name" class="form-control" id="inputForName"/>
+      </div>
+      <div class="mb-3">
+        <textarea type="message" placeholder="Your Message" name="message" class="form-control" id="inputforMessage"></textarea>
+      </div>
+      <div class="mb-3">
+        <input type="email" placeholder="Your Email" name="email" class="form-control" id="inputforEmail">
+      </div>
+      <button type="submit" class="btn mb-4" style="background-color:{{theme.default-button-color}};">Submit</button>
+    </form>
+  </div>
+</div>
+
+
+
+
+<script>
+function startClippy(){
+    new ClipboardJS('.btn');
+}
+window.onload = startClippy;
+</script>

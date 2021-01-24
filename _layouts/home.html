@@ -22,8 +22,8 @@ layout: default
 {% endif %}
 
 <!-- ABOUT ME SECTION -->
-<div class="card mx-auto border-0">
-  <div class="row no-gutters">
+<div class="card mx-auto border-0" style="position:relative;background-color:{{theme.home-background-color}};">
+  <div class="row">
     <div class="col-md-4">
       {% if site.animate %}
         <img src="{{ site.profile_image }}" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" alt="...">
@@ -34,20 +34,14 @@ layout: default
     <!-- EDUCATION SECTION -->
     <div class="col-md-8">
       {% if site.animate %}
-      <div class="card-body animate__animated animate__fadeInRight" style:"height: .5rem;">
+      <div class="card-body animate__animated animate__fadeInRight" style="color:{{theme.education-font-color}};">
       {% else %}
-      <div class="card-body">
+      <div class="card-body mt-0" style="color:{{theme.education-font-color}};">
       {% endif %}
-        <h5 class="card-title">{{ page.title }}</h5>
-        <p class="card-text">{{ content | markdownify }}</p>
+        <p style="color:{{theme.education-font-color}};">{{ content | markdownify}}<p>
         {% if site.home_option == "education" %}
           {% include education.html %}
-        {% elsif site.home_option == "timeline" %}
-          {% include timeline.html %}
-        {% elsif site.home_option =="skills" %}
-        <canvas id="myBarChart" height="50"></canvas>
         {% endif %}
-        <p class="card-text"><small class="text-muted"><i>Last updated {{ page.date }}</i></small></p>
       </div>
     </div>
   </div>
@@ -108,7 +102,7 @@ layout: default
                       {% if projects.tech %}
                         <h6><mark><u>Technologies</u></mark></h6>
                         {% for tech in projects.tech %}
-                        <span class="badge badge-secondary mr-1" style="background-color:#145374;">{{ tech }}</span>
+                        <span class="badge badge-secondary mr-1" style="background-color:{{ theme.projects-color }};">{{ tech }}</span>
                         {% endfor %}
                       {% endif %}
                     </div>

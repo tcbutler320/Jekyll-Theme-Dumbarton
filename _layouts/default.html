@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+{% assign theme = site.data.themes[site.ui_theme] %}
 <html>
   {% include head.html %}
-  <body>
+  <body style="background-color:{{theme.background-color}};">
     {% include nav.html %}
     <div class="dumbarton-spacer-sm"></div>
     <div class="container">
