@@ -32,7 +32,7 @@ abyss:
     post-font-weight: "700"
     default-button-color: ""
 
-dark:
+dark: 
     name: dark
     background-color: "#000000"
     home-background-color: "#000000"

@@ -39,7 +39,7 @@ phonenumber:
 #========================================#
 # --------- UI THEMES -------------------#
 #========================================#
-ui_theme: dark # abyss 
+ui_theme: abyss                                 # Create your own theme by setting options in _data/themes.yml
 
 
 # =======================================#
