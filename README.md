@@ -28,11 +28,12 @@
 
 [![Screenshot](https://raw.githubusercontent.com/tcbutler320/Jekyll-Theme-Dumbarton/dev/screenshot.png "Sample screenshot")](https://dumbarton.netlify.app/)
 
+[![Screenshot2](https://raw.githubusercontent.com/tcbutler320/Jekyll-Theme-Dumbarton/dev/screenshot2.png "Sample screenshot")](https://dumbarton.netlify.app/)
+
 ## Table of Contents
 
 - [Table of Contents](#table-of-contents)
 - [About](#about)
-  - [Main Features](#main-features)
 - [Installation](#installation)
 - [Setting Options](#setting-options)
   - [Base  Settings](#base--settings)
@@ -52,18 +53,6 @@
 
 Dumbarton is a Jekyll Theme developed by Tyler Butler. The theme is designed for academics and features a simple home page with an about me section, a blog, and an interactive highlights section to describe publications, coursework, courses taught, and projects. UI design with Bootstrap and Animate CSS.
 
-### Main Features
-
-- Home Page
-    - [x] Publications 
-    - [ ] Automatic bibliography formatting with jekyll-scholar 
-    - [x] Coursework
-    - [x] Teaching 
-    - [x] Projects
-- Blog
-    - [x] Wordpress-Styled Blog Page 
-    - [ ] Sidebar Widgets
-    - [ ] Embedded Twitter Timeline 
 
 **A Note on Compatability**
 
@@ -80,7 +69,6 @@ Follow the following instructions to install the Dumbarton theme:
     ```
 2. Use Bundler to install dependancies
     ```bash
-    bundle config --local set path vendor/bundle
     bundle install
     ```
 3. Start the Jekyll development server
@@ -112,13 +100,53 @@ There are many settings available to users to change how the theme looks. These 
 | `tags`  	|  Used to generate tags widget on blogs page, seperated by spaces  	| e.g. `tags:  post jekyll`  	|
 | `comments`   | Enable comments on blog posts using gitalk. **Not Currently Working**    |  `comments: false`   |
 
-### Theme Settings 
+### Theme Settings   
+
+
+**UI 2.0 Color Schemes 🌈**  
+The recent Dumbarton release supports Color Schemes! To pick a pre-configured color theme, change the `ui-theme` option in `_config.yml` . To create a new theme add a new entry in `_data/themes.yml`    
+
+```yml
+abyss:
+    name: abyss
+    nav-color: "#10292e"
+    nav-text: "#149f98"
+    title-font: "Noto Sans JP"
+    link-font: "#272343"
+    link-color: "#272343"
+    link-font: "Poppins"
+    font: "Poppins"
+    font-color: "Black"
+    social-color: "#CCCCCC"
+    footer-social-color: "Black"
+    button-color: "black"
+    home-highlight-background: "#10292e"
+    home-highlight-header-text: "#149f98"
+    education-title-font: "Noto Sans JP"
+    education-title-size: "18px"
+    education-entry-font: "Noto Sans JP"
+    education-entry-size: "18px"
+    education-section-size: "15px"
+    certification-title-font: "Noto Sans JP"
+    certification-title-size: "18px"
+    certification-entry-font: "Noto Sans JP"
+    certification-entry-size: "18px"
+    certification-section-size: "15px"
+    highlights-tab-color: "White"
+    projects-color: "Black"
+    border-style: ""
+    post-tag-size: "20px"
+    post-title-size: "36px"
+    post-author-size: "15px"
+    post-font-weight: "700"
+    default-button-color: ""
+```
+
+
+
 
 | Field  	| Description  	| Options  	|
 |---	|---	|---	|
-| `nav-color`  	|  Color of the top navivation bar 	|  e.g. `"#00334e"` 	|
-| `footer-color`  	|  Color of the bottom footer bar 	|  e.g. `"#00334e"` 	|
-| `card-color`  	|  Color of additional cards like the home highlights section, as well as buttons used on the blog and contact me page 	|  e.g. `"#00334e"` 	|
 |  `nav-dIcon` 	|  Used as the nav bar drop down icon on mobile or small screen view 	| Select any fontawesome icon, e.g. `"fas fa-caret-down"`  	|
 |  `animate` 	| When enabled, home page animations will be turned on and used upon first loading the page  	| e.g. `true`, `false`  	|
 |  `home_option` 	| Used to change the section below the 'about me' on the home page. **Note that only option `education` is currently working**  	|  e.g. `education` 	|
@@ -184,9 +212,11 @@ Site favicons are located at `/assets/img/icons`. You can use a [Favicon Generat
 I borrowed concepts and assets from various other open source projects. A special thanks for everyone who contributed to Jekyll-Theme-Dumbarton. 
 
 ### Code
-
+- [Corey](https://codepen.io/Corsurath/pen/abbxNpj)
+  - Used as a concept for the blog layout v 2.0
 - [Masresha](https://codepen.io/masresha)
-    - [Decision Making App](https://codepen.io/masresha/pen/KyLrbK): Used as a concept for the blog layout
+    - [Decision Making App](https://codepen.io/masresha/pen/KyLrbK): Used as a concept for the blog layout v 1.0
+    - 
 
 ### Images
 

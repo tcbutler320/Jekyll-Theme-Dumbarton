@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+{% assign theme = site.data.themes[site.ui_theme] %}
 
 <!--  HELP TIPS SECTION  -->
 <!-- used only for develop mode, disable these in _config.yml with `help_tips: false` -->
@@ -21,8 +22,8 @@ layout: default
 {% endif %}
 
 <!-- ABOUT ME SECTION -->
-<div class="card mx-auto border-0">
-  <div class="row no-gutters">
+<div class="card mx-auto border-0" style="position:relative;background-color:{{theme.home-background-color}};">
+  <div class="row">
     <div class="col-md-4">
       {% if site.animate %}
         <img src="{{ site.profile_image }}" class="img-thumbnail float-left animate__animated animate__fadeInLeft shadow bg-white rounded" alt="...">
@@ -33,42 +34,37 @@ layout: default
     <!-- EDUCATION SECTION -->
     <div class="col-md-8">
       {% if site.animate %}
-      <div class="card-body animate__animated animate__fadeInRight" style:"height: .5rem;">
+      <div class="card-body animate__animated animate__fadeInRight" style="color:{{theme.education-font-color}};">
       {% else %}
-      <div class="card-body">
+      <div class="card-body mt-0" style="color:{{theme.education-font-color}};">
       {% endif %}
-        <h5 class="card-title">{{ page.title }}</h5>
-        <p class="card-text">{{ content | markdownify }}</p>
+        <p style="color:{{theme.education-font-color}};">{{ content | markdownify}}<p>
         {% if site.home_option == "education" %}
           {% include education.html %}
-        {% elsif site.home_option == "timeline" %}
-          {% include timeline.html %}
-        {% elsif site.home_option =="skills" %}
-        <canvas id="myBarChart" height="50"></canvas>
         {% endif %}
-        <p class="card-text"><small class="text-muted"><i>Last updated {{ page.date }}</i></small></p>
       </div>
     </div>
   </div>
 </div>
 
+<!-- style="font-family:{{ theme.link-font }};background-color:{{ theme.nav-color }}; -->
+
 <!-- HOME HIGHLIGHTS SECTION --> 
-<h5 class="card-title text-center mb-3 border-0"></h5>
 {% if site.animate %}
-<div class="card mx-auto animate__animated animate__slideInUp animate__delay-1s" style="max-width: 100%;">
+<div class="card mx-auto animate__animated animate__slideInUp animate__delay-1s glowing-border" style="max-width: 100%;">
 {% else %}
-<div class="card mx-auto" style="max-width: 100%;">
+<div class="card mx-auto mb-1 border-0"  style="max-width: 100%;">
 {% endif %}
-  <div class="card-header" style="background-color:{{ site.card-color }};">
+  <div class="card-header" style="background-color:{{ theme.home-highlight-background }};">
     <ul class="nav nav-tabs card-header-tabs" id="test-list" role="tablist">
       {% for section in site.data.sections %}
         {% if section.first %}
           <li class="nav-item">
-            <a class="nav-link active" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}}" aria-selected="true">{{section.name}}</a>
+            <a class="nav-link shadow-none" id="{{ section.jsid }}" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="true" style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}} {{section.name}}</a>
           </li>
         {% else %}
           <li class="nav-item">
-              <a class="nav-link text-light"  href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="false">{{section.name}}</a>
+              <a class="nav-link" id="{{ section.jsid }}" href="#{{section.id}}" role="tab" aria-controls="{{section.id}}" aria-selected="true" style="font-family:{{ theme.font}};color:{{ theme.home-highlight-header-text}};">{{section.emoji}} {{section.name}}</a>
           </li>
         {% endif %}
       {% endfor %}
@@ -80,7 +76,7 @@ layout: default
           {% if section.first %}
             {% if section.name == "Publications" %}
               <div class="tab-pane active overflow-auto" id="{{section.id}}" role="tabpanel">
-                <h5 class="card-title text-center" style="font-family:Courgette;"><a href="/{{ section.url }}" class="highlighted">{{section.description}}</a></h5>
+                <p><i>{{section.description}}</i></p>
                 <p class="card-text">{% bibliography -f papers %}</p>
               </div>
             {% else %}
@@ -91,22 +87,22 @@ layout: default
           {% else %}  
             {% if section.name == "Presentations" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center" style="font-family:Courgette;">{{section.description}}</h5>
+                <p><i>{{section.description}}</i></p>
                 <p class="card-text">{% bibliography -f presentations %}</p>              
               </div>
             {% elsif section.name == "Projects" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center" style="font-family:Courgette;">{{section.description}}</h5>
+                <p><i>{{section.description}}</i></p>
                   {% for projects in site.data.projects %}
-                  <div class="media  mt-3">
-                    <img src="{{ projects.image }}" class="mr-3 mb-2 img-thumbnail" alt="...">
+                  <div class="media mt-2">
+                    <a href="{{ projects.link }}"><img src="{{ projects.image }}" class="mr-3 mb-2 img-thumbnail border-0" alt="..."></a>
                     <div class="media-body">
-                      <h5 class="mt-0">{{ projects.name }}</h5>
+                      <h5 class="mt-0"><a href="{{ projects.link }}" class="highlighted">{{ projects.name }}</a></h5>
                       {{ projects.description }}
                       {% if projects.tech %}
                         <h6><mark><u>Technologies</u></mark></h6>
                         {% for tech in projects.tech %}
-                        <span class="badge badge-secondary mr-1" style="background-color:#145374;">{{ tech }}</span>
+                        <span class="badge badge-secondary mr-1" style="background-color:{{ theme.projects-color }};">{{ tech }}</span>
                         {% endfor %}
                       {% endif %}
                     </div>
@@ -116,30 +112,29 @@ layout: default
               </div>
             {% elsif section.name == "Teaching" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center" style="font-family:Courgette;">{{section.description}}</h5>
+                <p><i>{{section.description}}</i></p>
                     {% for courses in site.data.teaching %}
                     <div class="list-group">
-                      <a href="#" class="list-group-item list-group-item-action">
+                      <div class="list-group-item list-group-item-action">
                         <div class="d-flex w-100 justify-content-between">
                           <h5 class="mb-1">{{ courses.Schoool }}</h5>
                           <p>{{ courses.Program }}</p>
                           <small>{{ courses.StartDate }} - {{ courses.EndDate }}</small>
                         </div>
                         <p class="mb-1">{{ courses.description }}</p>
-                        <small>Donec id elit non mi porta.</small>
-                      </a>
+                        <small>{{ courses.Department }}</small>
+                      </div>
                     </div>
                     {% endfor %}
               </div>
             {% elsif section.name == "Coursework" %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
-                <h5 class="card-title text-center" style="font-family:Courgette;">{{section.description}}</h5>
+                <p><i>{{section.description}}</i></p>
                 <div class="list-group">
                 {% for courses in site.data.courses %}
-                  <button type="button" class="list-group-item list-group-item-action">{{ courses.Course }}</button>
+                  <button type="button" class="list-group-item text-left">{{ courses.Course }}</button>
                 {% endfor %}
                 </div>
-
               </div>
             {% else %}
               <div class="tab-pane overflow-auto" id="{{section.id}}" role="tabpanel" aria-labelledby="{{section.id}}-tab">  
@@ -152,6 +147,8 @@ layout: default
       </div>
   </div>
 </div>
+
+
 
 <!-- ANIMATE.JS ANIMATE LIBRARY
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous"></script>
@@ -178,35 +175,6 @@ layout: default
 $('body').scrollspy({ target: '#list-example' })
 </script>
 
-
-<script>
-var ctx = document.getElementById('myBarChart').getContext('2d');
-var myBarChart = new Chart(ctx, {
-    type: 'horizontalBar',
-    data: {
-        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-        datasets: [{
-            label: 'My Skills',
-            data: [12, 19, 3, 5, 2, 3],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero: true
-                }
-            }]
-        }
-    }
-});
-</script>
-
-
-
-
-
 <script>
 $('.collapse').collapse()
 </script>
@@ -214,4 +182,3 @@ $('.collapse').collapse()
 <script>
 $('.show').show()
 </script>
-
