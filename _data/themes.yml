@@ -31,6 +31,7 @@ abyss:
     post-author-size: "15px"
     post-font-weight: "700"
     default-button-color: ""
+    social-color-footer : black
 
 dark: 
     name: dark
@@ -69,5 +70,7 @@ dark:
     post-author-size: "15px"
     post-font-weight: "700"
     default-button-color: ""
+    social-color-footer : black
+
 
 
