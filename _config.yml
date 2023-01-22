@@ -80,7 +80,20 @@ help_tips: false                                    # options: true, false  | us
 
 
 # =======================================#
-# -----------BUILD SETTINGS--------------#
+# -----------latex settings--------------#
+#========================================#
+
+jektex:
+  cache_dir: ".jektex-cache"
+  ignore: ["*.xml"]
+  silent: false
+  macros:
+    - ["\\Q", "\\mathbb{Q}"]
+    - ["\\C", "\\mathbb{C}"]
+
+
+# =======================================#
+# -----------build settings--------------#
 #========================================#
 theme: 
 markdown: kramdown
@@ -88,10 +101,16 @@ markdown: kramdown
 kramdown:
   syntax_highlighter: rouge
 
+
+
+
+
+
 plugins:
   - jekyll-feed
   - jekyll-scholar
   - jekyll-environment-variables
+  - jektex
 sass:
   sass_dir: _sass
   style: compressed
