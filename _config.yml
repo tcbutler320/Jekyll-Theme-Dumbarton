@@ -8,8 +8,8 @@
 # -----------BASE SETTINGS---------------#
 #========================================#
 
-title: Dumbarton 
-email: 
+title: Vinita M. Mulay
+email: vinitamulay5@gmail.com
 description: a minimalistic jekyll theme for academics
 baseurl:                                       # the subpath of your site, e.g. /blog
 url: "https://dumbarton.netlify.app/"          # the base hostname & protocol for your site, e.g. http://example.com
@@ -19,7 +19,7 @@ image_alt: A minimalistic jekyll theme for academic    # image description
 # =======================================#
 # -----------SITE SETTINGS---------------#
 #========================================#: 
-author: John Doe 
+author: Vinita M. Mulay
 profile_image: /assets/img/avatar/cropped.png #/assets/img/avatar/avatar.jpeg 
 occupation: 
 snippet:
@@ -90,7 +90,7 @@ kramdown:
 
 plugins:
   - jekyll-feed
-  - jekyll-scholar
+ # - jekyll-scholar
   - jekyll-environment-variables
 sass:
   sass_dir: _sass
@@ -115,19 +115,19 @@ exclude:
 # =======================================#
 # -----JEKYLL SCHOLAR SETTINGS-----------#
 #========================================#
-scholar:
-  last_name: Dumbarton
-  style: apa
-  locale: en
-  source: /_bibliography/
-  bibliography: papers.bib
-  bibliography_template: bib
-  replace_strings: true
-  join_strings: true
-  details_dir: bibliography
-  details_layout: bibtex.html
-  details_link: 
-  query: "@*"
+#scholar:
+#  last_name: Dumbarton
+#  style: apa
+#  locale: en
+#  source: /_bibliography/
+#  bibliography: papers.bib
+#  bibliography_template: bib
+#  replace_strings: true
+#  join_strings: true
+#  details_dir: bibliography
+#  details_layout: bibtex.html
+#  details_link: 
+#  query: "@*"
 
 # =======================================#
 # ------------CDN SETTINGS---------------#
